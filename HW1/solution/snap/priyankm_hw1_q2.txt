@@ -1,0 +1,204 @@
+‘’’
+Author: Priyank Mathur
+Find association rules for item sets of size 2 and 3
+‘’’
+
+from collections import defaultdict
+from itertools import chain, combinations
+
+# Globals
+data_file = 'browsing.txt'
+support = 100
+item_counter = 1
+        
+def getNewId():
+    global item_counter
+    retVal = item_counter
+    item_counter += 1
+    return retVal
+
+# Containers
+name_hash = defaultdict(getNewId)
+id_hash = {}
+C1_ctr = defaultdict(int)
+C2_ctr = defaultdict(int)
+C3_ctr = defaultdict(int)
+R2_conf = defaultdict(int)
+R3_conf = defaultdict(int)
+
+def readFileGenerator(filename=data_file):
+    '''
+    Return lines of data
+    '''
+    file_obj = open(data_file)
+    for line in file_obj:
+        yield line
+
+def count_singletons():
+    '''
+    Count single items
+    '''
+    for line in readFileGenerator():
+        items = set(line.strip().split(" "))
+        for item in items:                
+            key = name_hash[item] # maintain name to id mapping
+            id_hash[key] = item # maintain id to name mapping
+            C1_ctr[key] = C1_ctr[key] + 1
+            
+def isFrequentItem(item):
+    '''
+    Check if an item has support > min support
+    '''
+    key = name_hash[item] if item in name_hash else None
+    return C1_ctr[key] > support if key else False
+
+def isFrequentPair(pair):
+    '''
+    Check if a pair has support > min support
+    '''
+    key1 = name_hash[pair[0]] if pair[0] in name_hash else None
+    key2 = name_hash[pair[1]] if pair[1] in name_hash else None
+    
+    if key1==None or key2==None:
+        return False
+    
+    dict_key = tuple(sorted((key1, key2)))
+    
+    return C2_ctr[dict_key] > support if dict_key in C2_ctr else False
+
+def prune_storage(storage):
+    '''
+    Remove counts of items where support < min support
+    '''
+    remove_keys = [key for key in storage.keys() if storage[key] < support]
+    for k in remove_keys: del storage[k]
+
+def prune_items(items, k=2):
+    '''
+    Returns a list of items to be used for creation of
+    higher order item sets
+    '''
+    
+    freq_items = {item:0 for item in items if isFrequentItem(item)}
+    
+    if k == 3:
+        candidate_sets = combinations(freq_items, 2)
+        freq_candidate_sets = [pair for pair in candidate_sets if isFrequentPair(pair)]
+        
+        '''
+        Check each of the items appears in at least 2 freq pairs
+        '''
+        for it in freq_items:
+            for c in freq_candidate_sets:
+                if it in c:
+                    freq_items[it] = freq_items[it] + 1
+        
+        freq_items = {item:cnt for item, cnt in freq_items.items() if cnt >= 2}
+
+    return freq_items
+        
+def makePassK(k=2):
+    '''
+    Create and filter item sets of size k
+    '''
+    cnt = 0
+    storage = C2_ctr if k==2 else C3_ctr
+    storage.clear()
+
+    for line in readFileGenerator():
+        items = set(line.strip().split(" "))
+          
+        freq_items = prune_items(items, k)
+        #print freq_items
+        
+        candidate_sets = combinations(freq_items, k)
+        
+        for c in candidate_sets:
+            key1 = name_hash[c[0]]
+            key2 = name_hash[c[1]]
+            key3 = name_hash[c[2]] if k==3 else None
+            dict_key = (key1, key2, key3) if k==3 else (key1, key2)
+            dict_key = tuple(sorted(dict_key))
+            storage[dict_key] = storage[dict_key] + 1
+            
+    prune_storage(storage)
+
+def get3Rules(k):
+    '''
+    Generate rules from triples of form 
+    item1, item2 -> item3
+    '''
+    ks = set(k)
+    for t in combinations(k, 2):
+        C2_key = tuple(sorted(t))
+        #print C2_key
+        
+        n1 = id_hash[t[0]]
+        n2 = id_hash[t[1]]
+        srt = sorted([n1, n2])
+        lhs = srt[0] + "," + srt[1]
+        ts = set(t)
+        rhs = ks.difference(ts)
+        rhs = rhs.pop()
+        representation = lhs + " -> " + id_hash[rhs]
+        
+        num = C3_ctr[k] * 1.0 if k in C3_ctr else None
+        denom = C2_ctr[C2_key] if C2_key in C2_ctr else None
+        #print num , denom
+        
+        if num==None or denom==None:
+            yield (representation, 0)
+        else:
+            conf = num / denom
+            yield (representation, conf)
+    
+def get2Rules(k):
+    '''
+    Generate rules from pairs of form 
+    item1 -> item2
+    '''
+    ks = set(k)
+    for t in combinations(k, 1):
+        C1_key = t[0]
+        #print C1_key
+        
+        lhs = str(C1_key)
+        ts = set(t)
+        rhs = ks.difference(ts)
+        rhs = rhs.pop()
+        representation = id_hash[C1_key] + " -> " + id_hash[rhs]
+        
+        num = C2_ctr[k] * 1.0 if k in C2_ctr else None
+        denom = C1_ctr[C1_key] if C1_key in C1_ctr else None
+        #print num , denom
+        
+        if num==None or denom==None:
+            yield (representation, 0)
+        else:
+            conf = num / denom
+            yield (representation, conf)
+
+def getRules(k):
+    '''
+    Create and store rules of length k 
+    '''
+    if k==3:
+        for triplet in C3_ctr:
+            #print triplet
+            for rule in get3Rules(triplet):
+                R3_conf[rule[0]] = rule[1]
+    elif k==2:
+        for pair in C2_ctr:
+            for rule in get2Rules(pair):
+                R2_conf[rule[0]] = rule[1]
+                
+# Execute commands
+count_singletons()
+makePassK(2)
+makePassK(3)
+getRules(2)
+getRules(3)
+
+# Display results
+#sorted(R2_conf.items(), key=lambda x: (x[1],x[0]), reverse=True )[:20]
+#sorted(R3_conf.items(), key=lambda x: (x[1],x[0]), reverse=True )[:20]

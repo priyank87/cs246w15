@@ -1,0 +1,321 @@
+package edu.stanford.cs246.kmeans;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.conf.Configured;
+import org.apache.hadoop.fs.FSDataInputStream;
+import org.apache.hadoop.fs.FileStatus;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.NullWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.hadoop.mapreduce.Reducer;
+import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
+import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
+import org.apache.hadoop.util.Tool;
+import org.apache.hadoop.util.ToolRunner;
+
+public class KMeans extends Configured implements Tool {
+   public static void main(String[] args) throws Exception {
+      System.out.println(Arrays.toString(args));
+      int res = ToolRunner.run(new KMeans(), args);
+      
+      System.exit(res);
+   }
+
+   @Override
+   public int run(String[] args) throws Exception {
+      System.out.println(Arrays.toString(args));
+      
+      String opBase = args[1];
+      String jobBase = "KMeansPass";
+      ArrayList<Long> errors = new ArrayList<Long>();
+      
+      Configuration conf = new Configuration();
+      conf.set("centroids", args[2]);
+      conf.setInt("pass", 1);
+      
+      Job job = new Job(conf, "KMeansPass1");
+      job.setJarByClass(KMeans.class);
+      
+      job.setMapOutputKeyClass(IntWritable.class);
+      job.setMapOutputValueClass(Text.class);
+      job.setOutputKeyClass(Text.class);
+      job.setOutputValueClass(NullWritable.class);
+
+      job.setMapperClass(Map.class);
+      job.setReducerClass(Reduce.class);
+
+      job.setInputFormatClass(TextInputFormat.class);
+      job.setOutputFormatClass(TextOutputFormat.class);
+
+      FileInputFormat.addInputPath(job, new Path(args[0]));
+      FileOutputFormat.setOutputPath(job, new Path(opBase+"1"));
+
+      job.waitForCompletion(true);
+      errors.add(job.getCounters().findCounter("Errors", "pass1").getValue());
+      
+      for (int pass=2; pass<=20; pass++) {
+    	  conf = new Configuration();
+    	  conf.set("centroids", opBase+(pass-1));
+          conf.setInt("pass", pass);
+          
+          job = new Job(conf, jobBase+pass);
+          job.setJarByClass(KMeans.class);
+          
+          job.setMapOutputKeyClass(IntWritable.class);
+          job.setMapOutputValueClass(Text.class);
+          job.setOutputKeyClass(Text.class);
+          job.setOutputValueClass(NullWritable.class);
+
+          job.setMapperClass(Map.class);
+          job.setReducerClass(Reduce.class);
+
+          job.setInputFormatClass(TextInputFormat.class);
+          job.setOutputFormatClass(TextOutputFormat.class);
+
+          FileInputFormat.addInputPath(job, new Path(args[0]));
+          FileOutputFormat.setOutputPath(job, new Path(opBase+pass));
+
+          job.waitForCompletion(true);
+          errors.add(job.getCounters().findCounter("Errors", "pass"+pass).getValue());
+      }
+      
+      System.out.println(errors);
+      
+      return 0;
+   }
+   
+   public static class Map extends Mapper<LongWritable, Text, IntWritable, Text> {
+	  ArrayList<String> centroids = new ArrayList<String>();
+	  ArrayList<Vector> centroidVectors = new ArrayList<Vector>();
+	  static IntWritable pass = new IntWritable();
+	  static IntWritable cluster = new IntWritable();
+	  static Text op = new Text();
+	  
+	  public void setup(Context context) throws IOException, InterruptedException {
+		  String strLine;
+		  
+		  Configuration conf = context.getConfiguration();
+		  pass.set(conf.getInt("pass", 0));
+		  
+		  FileSystem fs = FileSystem.get(conf);
+		  Path centroidFile = new Path(conf.get("centroids"));
+		  
+		  if (fs.isFile(centroidFile)) {
+			  FSDataInputStream in = fs.open(centroidFile);
+			  BufferedReader bufread = new BufferedReader (new InputStreamReader (in));
+	    	  
+	    	  while ((strLine = bufread.readLine ()) != null) {
+	    		     centroids.add(strLine);
+	          }
+	          in.close ();
+		  }
+		  else {
+			  FileStatus[] fileStats = fs.listStatus(centroidFile);
+			  
+			  for (int k=0; k < fileStats.length; k++) {
+				  Path f = fileStats[k].getPath();
+				  
+				  FSDataInputStream in = fs.open(f);
+				  BufferedReader bufread = new BufferedReader (new InputStreamReader (in));
+		    	  
+		    	  while ((strLine = bufread.readLine ()) != null) {
+		    		     centroids.add(strLine);
+		          }
+		          in.close ();
+			  }
+		  }
+		  
+          
+          for (String str : centroids) {
+        	  centroidVectors.add(new Vector(str));
+    	  }
+	  }
+	   
+      @Override
+      public void map(LongWritable key, Text value, Context context)
+              throws IOException, InterruptedException {
+    	  
+    	  String point = value.toString();
+    	  Vector v = new Vector(point);
+    	  
+    	  double minDist = Double.MAX_VALUE;
+    	  int minIdx = -1;
+    	  
+    	  for (int j=0; j<centroidVectors.size(); j++) {
+    		  double dist = v.dist(centroidVectors.get(j));
+    		  
+    		  if (dist < minDist) {
+    			  minDist = dist;
+    			  minIdx = j;
+    		  }
+    	  }
+    	  
+    	  cluster.set(minIdx);
+    	  context.getCounter("Errors", "pass"+pass).increment((long) Math.pow(minDist, 2));
+    	  op.set(point);
+    	  
+    	  context.write(cluster, op);
+    	  
+      }
+   }
+
+   public static class Reduce extends Reducer<IntWritable, Text, Text, NullWritable> {
+	  static final Text op = new Text();
+	  static IntWritable pass = new IntWritable();
+	  
+	  public void setup(Context context) throws IOException, InterruptedException {
+		  Configuration conf = context.getConfiguration();
+		  pass.set(conf.getInt("pass", 0));
+	  }
+	  
+      @Override
+      public void reduce(IntWritable key, Iterable<Text> values, Context context)
+              throws IOException, InterruptedException {
+    	  
+    	  double cnt = 0;
+    	  Vector vSum = null;
+    	  
+    	  for(Text val: values) {
+    		  String pt = val.toString();
+    		  Vector ptVec = new Vector(pt);
+    		  
+    		  if (cnt == 0) {
+    			  vSum  = Vector.getZeroVector(ptVec.coords.size());
+    		  }
+    		  
+			  cnt++;
+    		  vSum.add(ptVec);
+    	  }
+    	  
+    	  vSum.divideByN(cnt);
+    	  
+    	  op.set(vSum.toString());
+		  context.write(op, NullWritable.get());
+      }
+   }
+}
+
+package edu.stanford.cs246.kmeans;
+
+import java.util.ArrayList;
+
+public class Vector {
+	
+	ArrayList<Double> coords = new ArrayList<Double>();
+	
+	static Vector getZeroVector(int size) {
+		Vector v = new Vector();
+		
+		for (int i=0; i<size; i++) {
+			v.coords.add(0.0);
+		}
+		
+		return v;
+	}
+	
+	public Vector(){}
+	
+	public Vector(String pts) {
+		String[] coordinates = pts.split(" ");
+		
+		for (String str : coordinates) {
+			double d = Double.parseDouble(str);
+			coords.add(d);
+		}
+	}
+	
+	public void add(Vector v2) {
+		
+		for (int i=0; i<v2.coords.size(); i++) {
+			this.coords.set(i, this.coords.get(i) + v2.coords.get(i));
+		}
+	}
+	
+	public void divideByN(double n) {
+		
+		for (int i=0; i<this.coords.size(); i++) {
+			this.coords.set(i, this.coords.get(i)/n);
+		}
+	}
+	
+	public double dist(Vector v2) {
+		double dist = 0;
+		
+		for (int i=0; i<v2.coords.size(); i++) {
+			dist += Math.pow(this.coords.get(i) - v2.coords.get(i), 2);
+		}
+		
+		return Math.pow(dist, 0.5);
+	}
+	
+	public String toString() {
+		StringBuffer str = new StringBuffer();
+		
+		for (int k=0; k<this.coords.size()-1; k++)
+			str.append(this.coords.get(k) + " ");
+		
+		str.append(this.coords.get(this.coords.size()-1));
+		
+		return str.toString();
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Vector v1 = new Vector("0 1 2 3 4");
+		Vector v2 = new Vector("0 1 1 3 3");
+		
+		System.out.println(v1.coords);
+		System.out.println(v2.coords);
+		System.out.println(v1.dist(v2));
+		System.out.println(v2.dist(v1));
+		
+		v1.add(v2);
+		v2.divideByN(3);
+		
+		System.out.println(v1.coords);
+		System.out.println(v2.coords);
+		System.out.println(v1.dist(v2));
+		
+		System.out.println(v1.toString());
+	}
+
+}
+
+// Python code to generate graph and get best labels
+test1 = [6.23658084E8, 5.0986063E8, 4.85478413E8, 4.63994716E8, 4.60967022E8, 4.6053561E8, 4.60310797E8, 4.60001258E8, 4.59568241E8, 4.59018805E8, 4.5848837E8, 4.57941919E8, 4.5755567E8, 4.57287833E8, 4.57048292E8, 4.56889922E8, 4.56701323E8, 4.56401899E8, 4.56175503E8, 4.55984591E8]
+test2 = [4.38745437E8, 2.49801643E8, 1.94492505E8, 1.69802592E8, 1.56293459E8, 1.4909191E8, 1.42506236E8, 1.32301622E8, 1.17168711E8, 1.08545091E8, 1.02234922E8, 9.8275677E7, 9.5627978E7, 9.3791002E7, 9.2374815E7, 9.1539349E7, 9.1043261E7, 9.0749936E7, 9.0467844E7, 9.0214141E7]
+plt.plot(test1, label="c1.txt")
+plt.plot(test2, label="c2.txt")
+plt.legend()
+plt.xlabel("Iteration")
+plt.ylabel("Error")
+plt.title("Error vs Iteration")
+
+// Get best labels from centroid coordinates
+centStr = "0.17496894409937883 0.26409937888198765 0.48478260869565226 0.4175776397515528 0.3142236024844721 0.15795031055900627 0.07546583850931678 0.21559006211180123 0.33819875776397507 0.6326086956521739 0.12447204968944099 0.7521118012422355 0.15298136645962745 0.12142857142857141 0.19863354037267086 0.249689440993789 0.16366459627329188 0.34677018633540374 1.7215527950310567 0.19913043478260872 1.37223602484472 0.3104968944099379 0.21465838509316768 0.193416149068323 0.41155279503105574 0.13223602484472052 0.02267080745341615 0.021304347826086957 0.007018633540372672 0.024472049689440997 0.014906832298136646 0.0011801242236024845 0.09024844720496894 0.002360248447204969 0.07192546583850934 0.02708074534161491 0.10708074534161494 0.007018633540372672 0.02372670807453416 0.025838509316770186 0.005962732919254659 0.04366459627329193 0.01173913043478261 0.0063975155279503105 0.04291925465838507 0.031242236024844716 0.0027950310559006213 0.01925465838509317 0.06939130434782607 0.13108074534161487 0.028931677018633542 0.6866832298136648 0.21185093167701857 0.06648447204968946 10.619267080745331 187.82608695652175 868.944099378882 0.7453416149068323"
+cent = centStr.split()
+cent = map(double, cent)
+idx = (np.argsort(cent))[::-1]
+vocab = open('vocab.txt').read()
+words = vocab.split("\n")
+cnt = 1
+for i in idx:
+    print words[i]
+    cnt += 1
