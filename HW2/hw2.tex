@@ -12,7 +12,6 @@
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
 \lstset{frame=tb,
-  language=Java,
   aboveskip=3mm,
   belowskip=3mm,
   showstringspaces=false,
@@ -405,8 +404,22 @@ At this iteration, $\phi$ converges to the finite value corresponding to the opt
 
 \pagebreak[4]
 \section*{Answer to Question 3.d}
+
+\textbf{Data distribution}
+Let the actual data be present in the below format. There are 3 true circular clusters with the points lying on the circumference of the circle. In this setting, each circle will ideally have its centroid at the center of the circle. Let each of the 3 clusters have n points. Also for the sake of analysis, we will assume the radius (r) of the 3 circles to be 1.
+
+We will also assume that the distance $G-1 \gg K+1$
+\\
+
+Thus, the optimal cost is equal to -
+$$\phi_{Opt} = 3 \times n r = 3n$$
 \includegraphics[scale=0.8]{q3_1} \\
+
+Now, lets assume a bad initialization as shown in diagram below. The farthest cluster gets 2 centroid allocations.
+
 \includegraphics[scale=0.8]{q3_2} \\
+
+In this case, the k-means algorithm will converge with the following cluster assignments.\\
 \includegraphics[scale=0.8]{q3_3}
 
 \pagebreak[4]

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 FEB 2015 02:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 FEB 2015 02:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -185,9 +185,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 137.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/03/04 1.5c listings language file
-) (./hw2.aux
+(./hw2.aux
 
 LaTeX Warning: Label `eq:simple' multiply defined.
 
@@ -197,18 +195,18 @@ LaTeX Warning: Label `eq:simple' multiply defined.
 )
 \openout1 = `hw2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
  (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
@@ -272,171 +270,171 @@ e
 ))
 \c@lstlisting=\count118
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--61
+Underfull \hbox (badness 10000) in paragraph at lines 57--60
 
  []
 
 [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
 
-Overfull \hbox (16.43236pt too wide) detected at line 131
+Overfull \hbox (16.43236pt too wide) detected at line 130
 [] \OMS/cmsy/m/n/14.4 ^^B [] \OT1/cmr/m/n/14.4 = []
  []
 
 [2]
-Overfull \hbox (12.42302pt too wide) detected at line 154
+Overfull \hbox (12.42302pt too wide) detected at line 153
 [] \OMS/cmsy/m/n/14.4 ^^B [] \OT1/cmr/m/n/14.4 = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 183--185
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 205--213
+Underfull \hbox (badness 10000) in paragraph at lines 204--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--213
+Underfull \hbox (badness 10000) in paragraph at lines 204--212
 
  []
 
 <q1cc.png, id=28, 395.4775pt x 282.05376pt>
 File: q1cc.png Graphic file (type png)
  <use q1cc.png>
-Package pdftex.def Info: q1cc.png used on input line 214.
+Package pdftex.def Info: q1cc.png used on input line 213.
 (pdftex.def)             Requested size: 395.47653pt x 282.05305pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 [6 <./q1cc.png>] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--230
+Underfull \hbox (badness 10000) in paragraph at lines 223--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 235.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 234.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 235.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 234.
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--246
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 241--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--260
+Underfull \hbox (badness 10000) in paragraph at lines 255--259
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
 [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
 
  []
 
 [12] <q2err.png, id=55, 642.4pt x 481.8pt>
 File: q2err.png Graphic file (type png)
  <use q2err.png>
-Package pdftex.def Info: q2err.png used on input line 318.
+Package pdftex.def Info: q2err.png used on input line 317.
 (pdftex.def)             Requested size: 513.9207pt x 385.4405pt.
 
-Overfull \hbox (44.16568pt too wide) in paragraph at lines 318--319
+Overfull \hbox (44.16568pt too wide) in paragraph at lines 317--318
 [] 
  []
 
 [13 <./q2err.png>] [14]
-Overfull \hbox (62.10815pt too wide) detected at line 338
+Overfull \hbox (62.10815pt too wide) detected at line 337
 \OMS/cmsy/m/n/14.4 ^^@jj\OML/cmm/m/it/14.4 x[]\OMS/cmsy/m/n/14.4 jj[] ^^@ jj\OM
 L/cmm/m/it/14.4 c\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 S\OT1/cmr/m/n/14.4 )\OMS
 /cmsy/m/n/14.4 jj[] \OT1/cmr/m/n/14.4 + 2\OML/cmm/m/it/14.4 x[]:c\OT1/cmr/m/n/1
@@ -451,85 +449,99 @@ cmr/m/n/14.4 )\OMS/cmsy/m/n/14.4 jj[] \OT1/cmr/m/n/14.4 + 2\OML/cmm/m/it/14.4 x
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 376--377
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--390
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 391--394
+Underfull \hbox (badness 10000) in paragraph at lines 390--393
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 398--401
+Underfull \hbox (badness 10000) in paragraph at lines 397--400
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
 
  []
 
-[18] <q3_1.png, id=75, 510.85857pt x 304.88907pt>
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 411--413
+
+ []
+
+<q3_1.png, id=75, 510.85857pt x 339.21732pt>
 File: q3_1.png Graphic file (type png)
  <use q3_1.png>
-Package pdftex.def Info: q3_1.png used on input line 408.
-(pdftex.def)             Requested size: 408.68741pt x 243.91158pt.
+Package pdftex.def Info: q3_1.png used on input line 416.
+(pdftex.def)             Requested size: 408.68741pt x 271.3742pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--417
+
+ []
 
 <q3_2.png, id=76, 510.85857pt x 341.02406pt>
 File: q3_2.png Graphic file (type png)
  <use q3_2.png>
-Package pdftex.def Info: q3_2.png used on input line 409.
+Package pdftex.def Info: q3_2.png used on input line 420.
 (pdftex.def)             Requested size: 408.68741pt x 272.81961pt.
 
-<q3_3.png, id=77, 510.85857pt x 341.02406pt>
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
+
+ []
+
+[19 <./q3_1.png>] <q3_3.png, id=82, 510.85857pt x 341.02406pt>
 File: q3_3.png Graphic file (type png)
  <use q3_3.png>
-Package pdftex.def Info: q3_3.png used on input line 410.
+Package pdftex.def Info: q3_3.png used on input line 423.
 (pdftex.def)             Requested size: 408.68741pt x 272.81961pt.
- [19 <./q3_1.png> <./q3_2.png>] [20 <./q3_3.png>] [21]
+
+[20 <./q3_2.png> <./q3_3.png>] [21]
 <q4err.png, id=91, 380.42125pt x 282.05376pt>
 File: q4err.png Graphic file (type png)
  <use q4err.png>
-Package pdftex.def Info: q4err.png used on input line 418.
+Package pdftex.def Info: q4err.png used on input line 431.
 (pdftex.def)             Requested size: 380.4203pt x 282.05305pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--419
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
 
  []
 
 [22 <./q4err.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 424--425
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--427
+Underfull \hbox (badness 10000) in paragraph at lines 439--440
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
+Underfull \hbox (badness 10000) in paragraph at lines 443--444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 432--433
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 439--440
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
 
  []
 
@@ -537,6 +549,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 439--440
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 (./submission/snap/priyankm_hw2_q2.txt) [25]
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+)
 (./submission/snap/priyankm_hw2_q4.txt [26] [27] [28] [29] [30] [31]) [32]
 (./hw2.aux)
 
@@ -545,16 +560,16 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 41 ({)
+### simple group (level 1) entered at line 40 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  4830 strings out of 493117
  67735 string characters out of 6135433
- 201486 words of memory out of 5000000
+ 200598 words of memory out of 5000000
  8232 multiletter control sequences out of 15000+600000
  7631 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,40p,1259b,1646s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,43p,1259b,1643s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
@@ -567,7 +582,7 @@ r12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
 .pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.
 pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.p
 fb>
-Output written on hw2.pdf (32 pages, 228302 bytes).
+Output written on hw2.pdf (32 pages, 230344 bytes).
 PDF statistics:
  168 PDF objects out of 1000 (max. 8388607)
  108 compressed objects within 2 object streams
