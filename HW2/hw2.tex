@@ -85,21 +85,21 @@ $$T_{3,2} = R(:, 3) R(:, 2)$$
 
 We see that this matrix is symmetrical and each element represents a dot product between 2 columns (movies) of matrix R. These elements are also the numerators in the cosine similarity we defined above. \\
 
-Let matrix $Q^{\frac{1}{2}}$ represent the element wise square root of a matrix $Q$. We know that matrices P and Q are diagonal matrices and inverting a diagonal matrix is equivalent to dividing each of its elements by 1, i.e.
+Let matrix $Q^{\frac{1}{2}}$ represent the element wise square root of a matrix $Q$. We know that matrices P and Q are diagonal matrices and inverting a diagonal matrix is equivalent to dividing 1 by each of its non-zero elements, i.e.
 
 \[
 \begin{bmatrix}
     x_{11}   & 0 & 0 & \dots &0 \\
     0   & x_{22} & 0 & \dots & 0 \\
     \hdotsfor{5} \\
-    0  & 0 & 0 & \dots & x_{n}
+    0  & 0 & 0 & \dots & x_{nn}
 \end{bmatrix}^{-1}
 =
 \begin{bmatrix}
     1/x_{11}       & 0 & 0 & \dots &0 \\
     0  & 1/x_{22} & 0 & \dots & 0 \\
     \hdotsfor{5} \\
-    0   & 0 & 0 & \dots & 1/x_{n}
+    0   & 0 & 0 & \dots & 1/x_{nn}
 \end{bmatrix}
 \]
 
@@ -152,7 +152,7 @@ and
 \end{bmatrix}
 \] \\
 
-Hence, the matrix $[Q^{\frac{1}{2}}]^{-1} T [Q^{\frac{1}{2}}]^{-1}$ represents a matrix where each element has numerator representing dot product of 2 columns and denominator is the product of same 2 columns. Therefore, each each element is cosine similarity between 2 columns. \\
+Hence, the matrix $[Q^{\frac{1}{2}}]^{-1} T [Q^{\frac{1}{2}}]^{-1}$ represents a matrix where each element has numerator representing dot product of 2 columns and denominator is the product of magnitudes of same 2 columns. Therefore, each each element is cosine similarity between 2 columns. \\
 
 $$S_I = [Q^{\frac{1}{2}}]^{-1} R^TR [Q^{\frac{1}{2}}]^{-1}$$
 
@@ -164,8 +164,13 @@ $$S_U = [P^{\frac{1}{2}}]^{-1} RR^T [P^{\frac{1}{2}}]^{-1}$$
 \section*{Answer to Question 1.b}
 
 $r_{u,s} = \sum_{x \in users} cos(x, u) \times R_{x,s}$ represents the recommendation method.\\
+e.g.
 
-From previous question, we know that $$S_U = [P^{\frac{1}{2}}]^{-1} RR^T [P^{\frac{1}{2}}]^{-1}$$ is an $m \times m$ symmetric matrix representing the cosine similarity for all users vs. all other users. 
+$$r_{1,1} = cos(1,1)R_{11} + cos(1,2)R_{21} + \hdots + cos(1,m)R_{m1}$$
+
+From previous question, we know that $$S_U = [P^{\frac{1}{2}}]^{-1} RR^T [P^{\frac{1}{2}}]^{-1}$$ is an $m \times m$ symmetric matrix representing the cosine similarity for all users vs. all other users. So, 
+$$r_{1,1} = S_{11}R_{11} + S_{12}R_{21} + \hdots + S_{1m}R_{m1} = r_{1,1}$$
+
 Then let $A = S_UR$, where
 $$A_{1,1} = S_{11}R_{11} + S_{12}R_{21} + \hdots + S_{1m}R_{m1} = r_{1,1}$$
 $$A_{1,2} = S_{11}R_{12} + S_{12}R_{22} + \hdots + S_{1m}R_{m2} = r_{1,2} $$
@@ -184,7 +189,7 @@ From part 1.a we know that $T$ is a symmetric matrix with each element represent
 
 Since each element in $R$ is either 0 or 1 represents an edge in the graph, the dot product of 2 user rows represents the degree of overlap between the 2 vectors.\\
 
-The entries along the diagonal of $T$,  ($T_{ii}$), represent the overlap between the user and itself. In other words, this represents the out degree of that users node in the bipartite user-to-item graph.\\
+The entries along the main diagonal of $T$,  ($T_{ii}$), represent the overlap between the user and itself. In other words, this represents the out degree of that users node in the bipartite user-to-item graph.\\
 
 The other entries of $T$,  ($T_{ij}$), represent the overlap between a user and another user. In other words, this represents the number of items that both these users liked, i.e. the number of that item nodes in the bipartite user-to-item graph that both users are connected to.
 
@@ -228,6 +233,13 @@ $C_{ij} = (A^T  A)_{ij} \\
 = C_{ji}$ \\
 
 Similarly, $K = AA^T$ is also symmetric since $K_{ij} = K_{ji}$ by the above argument.\\
+
+$K_{ij} = (A  A^T)_{ij} \\
+= \sum_k [ A_{ik}  A^T_{kj} ] \\
+= \sum_k [ A^T_{ki}  A_{jk} ]$ as $A_{ij} = A^T_{ji} \\
+= \sum_k [ A_{jk}  A^T_{ki} ] \\
+= (A  A^T)_{ji}\\
+= K_{ji}$ \\
 
 We know that -
 \begin{itemize}
@@ -279,8 +291,10 @@ Since $V^T = V^{-1}$ as $V$ is orthogonal
 \implies A^T A V = V S^T S
 \end{align*}
 
-We can write for each column of $V$ as
-$$(A^TA) v_k = \lambda_k v_k$$ where $\lambda_k$ is the eigenvalue which is equal to $\sigma^2$, the singular value. Hence we can extract the right singular matrix $V$ and the singular values $S$ from the above equations.\\
+Here $S$ is a matrix containing singular values. We can obtain $S$ by taking the square root of each of the eigenvalues.\\
+
+We can write each column of $V$ as
+$$(A^TA) v_k = \lambda_k v_k$$ where $\lambda_k$ is the eigenvalue which is equal to $\sigma_k^2$, the singular value. Hence we can extract the right singular matrix $V$ and the singular values $S$ from the above equations.\\
 
 To find $U$, we can solve the below equation
 \begin{align*}
@@ -301,6 +315,8 @@ Since $U^T = U^{-1}$ as $U$ is orthogonal
 \implies A A^T = U S S^T U^{-1}\\
 \implies A A^T U = U S S^T
 \end{align*}
+
+Here $S$ is a matrix containing singular values. We can obtain $S$ by taking the square root of each of the eigenvalues.\\
 
 We can write for each column of $U$ as
 $$(AA^T) u_k = \lambda_k u_k$$ where $\lambda_k$ is the eigenvalue which is equal to $\sigma^2$, the singular value. Hence we can extract the left singular matrix $U$ and the singular values $S$ from the above equations.\\
@@ -354,7 +370,7 @@ To prove -
 $$\sum_{x \in S} || x - z ||^2 - \sum_{x \in S} || x - c(S)||^2 = |S| . || c(S) - z ||^2$$
 
 We know that 
-$$||u - v||^2 = ||u||^2 + ||v||^2 - 2u.v$$
+$$||u - v||^2 = (u - v)^T (u - v) = ||u||^2 + ||v||^2 - 2u.v$$
 
 Let S be a set of n points $x_1, x_2 \hdots x_n$. Expanding LHS of the equation, we get -
 $$ || x_1 - z ||^2 + || x_2 - z ||^2 + \hdots + || x_n - z ||^2$$ 
@@ -367,6 +383,7 @@ $$ = n ||z||^2 - n ||c(S)||^2 + 2 c(S) (x_1 + x_2 + \hdots + x_n) - 2 z (x_1 + x
 We know that
 $$c(S) = \frac{(x_1 + x_2 + \hdots + x_n)}{n}$$
 
+\setcounter{equation}{0}
 \begin{equation}
 \implies  (x_1 + x_2 + \hdots + x_n) = n \times c(S)
 \end{equation} 
@@ -401,7 +418,7 @@ From (1) and (2), we get
 
 That is, distance of a set of points from a query point is minimum if the query point is the centroid of the set of data.\\
 
-Let $C_{t1}, C_{t2} \hdots C_{tk}$ be the $k$ clusters in $t^{th}$ iteration with $c_{t1}, c_{t2} \hdots c_{tk}$ centroids. Similarly for iteration $(t+1)$, clusters are $C_{(t+1)1}, C_{(t+1)2} \hdots C_{(t+1)k}$ with centroids $c_{(t+1)1}, c_{(t+1)2} \hdots c_{(t+1)k}$. \\
+Let $C_{t1}, C_{t2} \hdots C_{tk}$ be the $k$ clusters at end of $t^{th}$ iteration with $c_{t1}, c_{t2} \hdots c_{tk}$ centroids. Similarly for iteration $(t+1)$, clusters are $C_{(t+1)1}, C_{(t+1)2} \hdots C_{(t+1)k}$ with centroids $c_{(t+1)1}, c_{(t+1)2} \hdots c_{(t+1)k}$. \\
 
 Let $Cost (C_1, C_2 \hdots C_k, c_1, c_2 \hdots c_k)$ represent the cost while using clusters $C_1, C_2 \hdots C_k$ and centroids as $c_1, c_2 \hdots c_k$.\\
 
@@ -429,7 +446,7 @@ Cost (C_{(t+1)1}, C_{(t+1)2} \hdots C_{(t+1)k}, c_{t1}, c_{t2} \hdots c_{tk})
 
 Therefore, iteration $(t+1)$ should have better or atleast as good cluster assignments as iteration $t$. \\
 
-Hence, from (3), (4) and (5), we can deduce that $\phi^t \geq \phi^{t+1}$ since in $\phi^t$ we calculate distances using points which are not the optimal centroids of the data cluster.
+Hence, from (3), (4) and (5), we can deduce that $\phi^t \geq \phi^{t+1}$.
 
 
 \pagebreak[4]
@@ -443,7 +460,7 @@ We know that -
 \begin{itemize}
 \item From 3.a) that the distance of a set of points from a query point is minimum if the query point is the centroid of the set of data.
 \item From 3.b) we know that the error function $\phi$ is a monotonically decreasing function, i.e. $\phi^t \geq \phi^{t+1}$.
-\item The global optimal cluster assignment for the data set will give us the lowest possible cost. 
+\item For a fixed k, the global optimal cluster assignment for the data set will give us the lowest possible cost. 
 \end{itemize}
 
 Assume we break ties during cluster assignment consistently, for e.g. by assigning to cluster centroid with the lower id (index). Given these facts, for any data set and $k$ (number of clusters), there are only a finite number of cluster assignments. \\
@@ -536,6 +553,7 @@ Code at the end of the file.
 \pagebreak[4]
 \section*{Answer to Question 4b}
 \includegraphics*{q4err}\\
+As we can see, the cost decreases in each iteration till the algorithm converges. We also see that random initialization works much worse than clusters chosen in c2.txt.
 
 \pagebreak[4]
 \section*{Answer to Question 4c}

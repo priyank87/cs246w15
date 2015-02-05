@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 FEB 2015 21:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  5 FEB 2015 00:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -329,134 +329,144 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 182--184
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 204--212
+Underfull \hbox (badness 10000) in paragraph at lines 209--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--212
+Underfull \hbox (badness 10000) in paragraph at lines 209--217
 
  []
 
 <q1cc.png, id=28, 395.4775pt x 282.05376pt>
 File: q1cc.png Graphic file (type png)
  <use q1cc.png>
-Package pdftex.def Info: q1cc.png used on input line 213.
+Package pdftex.def Info: q1cc.png used on input line 218.
 (pdftex.def)             Requested size: 395.47653pt x 282.05305pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
 [6 <./q1cc.png>] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--229
+Underfull \hbox (badness 10000) in paragraph at lines 228--234
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 234.
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--243
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 246.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 234.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 246.
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--240
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 241--245
+Underfull \hbox (badness 10000) in paragraph at lines 250--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 253--257
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--259
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--262
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--271
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
 [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
 
  []
 
 [12] <q2err.png, id=55, 642.4pt x 481.8pt>
 File: q2err.png Graphic file (type png)
  <use q2err.png>
-Package pdftex.def Info: q2err.png used on input line 317.
+Package pdftex.def Info: q2err.png used on input line 333.
 (pdftex.def)             Requested size: 513.9207pt x 385.4405pt.
 
-Overfull \hbox (44.16568pt too wide) in paragraph at lines 317--318
+Overfull \hbox (44.16568pt too wide) in paragraph at lines 333--334
 [] 
  []
 
 [13 <./q2err.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
 [14]
-Overfull \hbox (62.10815pt too wide) detected at line 364
+Overfull \hbox (62.10815pt too wide) detected at line 380
 \OMS/cmsy/m/n/14.4 ^^@jj\OML/cmm/m/it/14.4 x[]\OMS/cmsy/m/n/14.4 jj[] ^^@ jj\OM
 L/cmm/m/it/14.4 c\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 S\OT1/cmr/m/n/14.4 )\OMS
 /cmsy/m/n/14.4 jj[] \OT1/cmr/m/n/14.4 + 2\OML/cmm/m/it/14.4 x[]:c\OT1/cmr/m/n/1
@@ -471,171 +481,167 @@ cmr/m/n/14.4 )\OMS/cmsy/m/n/14.4 jj[] \OT1/cmr/m/n/14.4 + 2\OML/cmm/m/it/14.4 x
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
 
  []
 
 
-Overfull \hbox (46.29416pt too wide) in paragraph at lines 406--407
+Overfull \hbox (46.29416pt too wide) in paragraph at lines 423--424
 []\OT1/cmr/m/n/14.4 Let $\OML/cmm/m/it/14.4 Cost\OT1/cmr/m/n/14.4 (\OML/cmm/m/i
 t/14.4 C[]; C[] [] C[]; c[]; c[] [] c[]\OT1/cmr/m/n/14.4 )$ rep-re-sent the cos
 t while us-ing clus-ters $\OML/cmm/m/it/14.4 C[]; C[] [] C[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--407
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
 
  []
 
 
-Overfull \hbox (53.7375pt too wide) detected at line 418
+Overfull \hbox (53.7375pt too wide) detected at line 435
 [] []
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 420--421
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 438--439
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
 
  []
 
 
-Overfull \hbox (46.29416pt too wide) in paragraph at lines 440--441
+Overfull \hbox (46.29416pt too wide) in paragraph at lines 457--458
 []\OT1/cmr/m/n/14.4 Let $\OML/cmm/m/it/14.4 Cost\OT1/cmr/m/n/14.4 (\OML/cmm/m/i
 t/14.4 C[]; C[] [] C[]; c[]; c[] [] c[]\OT1/cmr/m/n/14.4 )$ rep-re-sent the cos
 t while us-ing clus-ters $\OML/cmm/m/it/14.4 C[]; C[] [] C[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--441
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 449--450
+Underfull \hbox (badness 10000) in paragraph at lines 466--467
 
  []
 
 
-Overfull \hbox (26.36244pt too wide) detected at line 457
+Overfull \hbox (26.36244pt too wide) detected at line 474
 [] []
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 471--472
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
 
  []
 
 
-Overfull \hbox (51.11346pt too wide) in paragraph at lines 473--474
+Overfull \hbox (51.11346pt too wide) in paragraph at lines 490--491
 []\OT1/cmr/m/n/14.4 Extending the same logic as above, we can ar-gue that $[]$
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 485--487
+Underfull \hbox (badness 10000) in paragraph at lines 502--504
 
  []
 
 <q3_1.png, id=80, 510.85857pt x 339.21732pt>
 File: q3_1.png Graphic file (type png)
  <use q3_1.png>
-Package pdftex.def Info: q3_1.png used on input line 490.
+Package pdftex.def Info: q3_1.png used on input line 507.
 (pdftex.def)             Requested size: 408.68741pt x 271.3742pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--491
+Underfull \hbox (badness 10000) in paragraph at lines 506--508
 
  []
 
 <q3_2.png, id=81, 510.85857pt x 341.02406pt>
 File: q3_2.png Graphic file (type png)
  <use q3_2.png>
-Package pdftex.def Info: q3_2.png used on input line 494.
+Package pdftex.def Info: q3_2.png used on input line 511.
 (pdftex.def)             Requested size: 408.68741pt x 272.81961pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 494--495
+Underfull \hbox (badness 10000) in paragraph at lines 511--512
 
  []
 
 [20 <./q3_1.png>] <q3_3.png, id=86, 510.85857pt x 341.02406pt>
 File: q3_3.png Graphic file (type png)
  <use q3_3.png>
-Package pdftex.def Info: q3_3.png used on input line 497.
+Package pdftex.def Info: q3_3.png used on input line 514.
 (pdftex.def)             Requested size: 408.68741pt x 272.81961pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 496--498
+Underfull \hbox (badness 10000) in paragraph at lines 513--515
 
  []
 
 [21 <./q3_2.png> <./q3_3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 499--500
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--505
+Underfull \hbox (badness 10000) in paragraph at lines 518--522
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--507
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
 
  []
 
 [23] [24] <q4err.png, id=101, 380.42125pt x 282.05376pt>
 File: q4err.png Graphic file (type png)
  <use q4err.png>
-Package pdftex.def Info: q4err.png used on input line 538.
+Package pdftex.def Info: q4err.png used on input line 555.
 (pdftex.def)             Requested size: 380.4203pt x 282.05305pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 538--539
-
- []
-
 [25 <./q4err.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 544--545
+Underfull \hbox (badness 10000) in paragraph at lines 562--563
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--547
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 548--549
+Underfull \hbox (badness 10000) in paragraph at lines 566--567
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 550--551
+Underfull \hbox (badness 10000) in paragraph at lines 568--569
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 552--553
+Underfull \hbox (badness 10000) in paragraph at lines 570--571
 
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 559--560
+Underfull \hbox (badness 10000) in paragraph at lines 577--578
 
  []
 
@@ -681,7 +687,7 @@ pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pf
 b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 >
-Output written on hw2.pdf (39 pages, 249524 bytes).
+Output written on hw2.pdf (39 pages, 250168 bytes).
 PDF statistics:
  196 PDF objects out of 1000 (max. 8388607)
  128 compressed objects within 2 object streams
