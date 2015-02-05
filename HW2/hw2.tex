@@ -63,7 +63,7 @@ Collaborators: \underline{Emrah Budur, Shundan Xiao, Dibyajyoti Ghosh, Arkajyoti
 
 I acknowledge and accept the Honor Code.\\*[3ex]
 \bigskip
-\textit{(Signed)}\underline{Priyank Mathur}
+\textit{(Signed)} \underline{Priyank Mathur}
 % If you are not printing this document out, just type your initials above
 
 \vfill
@@ -407,14 +407,47 @@ Hence, from (3), (4) and (5), we can deduce that $\phi^t \geq \phi^{t+1}$ since 
 
 \pagebreak[4]
 \section*{Answer to Question 3.c}
+\setcounter{equation}{0}
+Let $C_{t1}, C_{t2} \hdots C_{tk}$ be the $k$ clusters in $t^{th}$ iteration with $c_{t1}, c_{t2} \hdots c_{tk}$ centroids. Similarly for iteration $(t+1)$, clusters are $C_{(t+1)1}, C_{(t+1)2} \hdots C_{(t+1)k}$ with centroids $c_{(t+1)1}, c_{(t+1)2} \hdots c_{(t+1)k}$. \\
 
-From 3.a) we know that the distance of a set of points from a query point is minimum if the query point is the centroid of the set of data. \\
-From 3.b) we know that the error function $\phi$ is a monotonically decreasing function, i.e. $\phi^t \geq \phi^{t+1}$.\\
-Assume we break ties during cluster assignment consistently, for e.g. by assigning to cluster centroid with the lower id (index). \\
+Let $Cost (C_1, C_2 \hdots C_k, c_1, c_2 \hdots c_k)$ represent the cost while using clusters $C_1, C_2 \hdots C_k$ and centroids as $c_1, c_2 \hdots c_k$.\\
 
-Given these facts, for any data set, there are only a finite number of cluster assignments. From this, we can argue that cluster assignments will keep changing to reduce $\phi$ until a point where we do not modify the assignments anymore, since we reached an assignment state where each point is already assigned to its nearest centroid from previous iteration.\\
+We know that -
+\begin{itemize}
+\item From 3.a) that the distance of a set of points from a query point is minimum if the query point is the centroid of the set of data.
+\item From 3.b) we know that the error function $\phi$ is a monotonically decreasing function, i.e. $\phi^t \geq \phi^{t+1}$.
+\item The global optimal cluster assignment for the data set will give us the lowest possible cost. 
+\end{itemize}
 
-At this iteration, $\phi$ converges to the finite value corresponding to the optimal assignment state. Note that this optimal assignment is not guaranteed to be globally optimum.
+Assume we break ties during cluster assignment consistently, for e.g. by assigning to cluster centroid with the lower id (index). Given these facts, for any data set and $k$ (number of clusters), there are only a finite number of cluster assignments. \\
+
+As we saw in 3.b), step (2) and (3) of the k-means algorithm reduce the overall cost. Hence, cluster assignments will keep changing to reduce $\phi$.
+
+\begin{equation}\label{eq:simple}
+\begin{aligned}
+Cost (C_{(t+1)1}, C_{(t+1)2} \hdots C_{(t+1)k}, c_{t1}, c_{t2} \hdots c_{tk}) \leq Cost (C_{t1}, C_{t2} \hdots C_{tk}, c_{t1}, c_{t2} \hdots c_{tk})
+\end{aligned}
+\end{equation} and
+\begin{equation}\label{eq:simple}
+\begin{aligned}
+Cost (C_{(t+1)1}, C_{(t+1)2} \hdots C_{(t+1)k}, c_{(t+1)1}, c_{(t+1)2} \hdots c_{(t+1)k}) \leq \\
+Cost (C_{(t+1)1}, C_{(t+1)2} \hdots C_{(t+1)k}, c_{t1}, c_{t2} \hdots c_{tk})
+\end{aligned}
+\end{equation}
+
+This is continued until we do not modify the assignments anymore, since we either -
+\begin{itemize}
+\item reached an assignment state where each point is already assigned to its nearest centroid from previous iteration.
+\item or we cycled through all possible cluster assignments and we reach the optimum cost in the last iteration.
+\end{itemize}
+
+At this iteration, using (1) and (2), we can say that \underline{$\phi$ converges} to the finite value corresponding to this optimal assignment state. Note that this optimal assignment is not guaranteed to be globally optimum.\\
+
+Extending the same logic as above, we can argue that \underline{k-means algorithm will converge} either when -
+\begin{itemize}
+\item we reach an assignment state where each point is already assigned to its nearest centroid from previous iteration.
+\item or we cycled through all possible cluster assignments and we reach the optimum state in the last iteration.
+\end{itemize}
 
 \pagebreak[4]
 \section*{Answer to Question 3.d}
