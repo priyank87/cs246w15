@@ -321,6 +321,33 @@ From the above curve we see that we achieve minimum r of -12.347 at k=261.
 \pagebreak[4]
 \section*{Answer to Question 2c}
 
+\subsection*{1.}
+To find $W$ that minimizes $||A-XW||_F^2$, we take its derivative w.r.t. W and solve
+$$ \frac{\partial (A-XW)^T(A-XW)}{\partial W} = 0 $$
+$$ \implies \frac{\partial (A^TA-2W^TX^TA-W^TX^TXW)}{\partial W} = 0 $$
+$$ \implies \frac{\partial (A^TA-2W^TX^TA-W^TW)}{\partial W} = 0 $$
+
+Solving, we get $W = X^T A$
+
+\subsection*{2.}
+By setting $X = \bar{U}$, we only consider the first $k$ singular vectors of $U$. From this, A can be reconstructed as 
+$$A = \bar{U}\bar{S}\bar{V}^T$$
+
+From part 1,
+$$W = X^T A = \bar{U}^T \bar{U}\bar{S}\bar{V}^T$$
+Since matrix $\bar{U}$ is orthogonal, we get
+
+$$W = \bar{S}\bar{V}^T$$
+
+\subsection*{3.}
+$min_{X^TX = I_K} ||A-XW||_F^2$\\
+
+Replacing $W = X^T A$ from part 1, we get
+
+$$min_{X^TX = I_K} ||A-XX^T A||_F^2$$
+$$ \implies min_{X^TX = I_K} ||A (I_k-XX^T)||_F^2$$
+$$ \implies min_{X^TX = I_K} ||A (X^TX-XX^T)||_F^2$$
+
 \pagebreak[4]
 \section*{Answer to Question 3.a}
 To prove -

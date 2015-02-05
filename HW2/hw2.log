@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 FEB 2015 18:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 FEB 2015 21:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -450,8 +450,13 @@ Overfull \hbox (44.16568pt too wide) in paragraph at lines 317--318
 [] 
  []
 
-[13 <./q2err.png>] [14]
-Overfull \hbox (62.10815pt too wide) detected at line 337
+[13 <./q2err.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
+
+ []
+
+[14]
+Overfull \hbox (62.10815pt too wide) detected at line 364
 \OMS/cmsy/m/n/14.4 ^^@jj\OML/cmm/m/it/14.4 x[]\OMS/cmsy/m/n/14.4 jj[] ^^@ jj\OM
 L/cmm/m/it/14.4 c\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 S\OT1/cmr/m/n/14.4 )\OMS
 /cmsy/m/n/14.4 jj[] \OT1/cmr/m/n/14.4 + 2\OML/cmm/m/it/14.4 x[]:c\OT1/cmr/m/n/1
@@ -466,171 +471,171 @@ cmr/m/n/14.4 )\OMS/cmsy/m/n/14.4 jj[] \OT1/cmr/m/n/14.4 + 2\OML/cmm/m/it/14.4 x
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--378
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
 
  []
 
 
-Overfull \hbox (46.29416pt too wide) in paragraph at lines 379--380
+Overfull \hbox (46.29416pt too wide) in paragraph at lines 406--407
 []\OT1/cmr/m/n/14.4 Let $\OML/cmm/m/it/14.4 Cost\OT1/cmr/m/n/14.4 (\OML/cmm/m/i
 t/14.4 C[]; C[] [] C[]; c[]; c[] [] c[]\OT1/cmr/m/n/14.4 )$ rep-re-sent the cos
 t while us-ing clus-ters $\OML/cmm/m/it/14.4 C[]; C[] [] C[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
 
  []
 
 
-Overfull \hbox (53.7375pt too wide) detected at line 391
+Overfull \hbox (53.7375pt too wide) detected at line 418
 [] []
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 393--394
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
+Underfull \hbox (badness 10000) in paragraph at lines 430--431
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
 
  []
 
 
-Overfull \hbox (46.29416pt too wide) in paragraph at lines 413--414
+Overfull \hbox (46.29416pt too wide) in paragraph at lines 440--441
 []\OT1/cmr/m/n/14.4 Let $\OML/cmm/m/it/14.4 Cost\OT1/cmr/m/n/14.4 (\OML/cmm/m/i
 t/14.4 C[]; C[] [] C[]; c[]; c[] [] c[]\OT1/cmr/m/n/14.4 )$ rep-re-sent the cos
 t while us-ing clus-ters $\OML/cmm/m/it/14.4 C[]; C[] [] C[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 413--414
+Underfull \hbox (badness 10000) in paragraph at lines 440--441
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--423
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
 
  []
 
 
-Overfull \hbox (26.36244pt too wide) detected at line 430
+Overfull \hbox (26.36244pt too wide) detected at line 457
 [] []
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 444--445
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
 
  []
 
 
-Overfull \hbox (51.11346pt too wide) in paragraph at lines 446--447
+Overfull \hbox (51.11346pt too wide) in paragraph at lines 473--474
 []\OT1/cmr/m/n/14.4 Extending the same logic as above, we can ar-gue that $[]$
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 458--460
+Underfull \hbox (badness 10000) in paragraph at lines 485--487
 
  []
 
-<q3_1.png, id=79, 510.85857pt x 339.21732pt>
+<q3_1.png, id=80, 510.85857pt x 339.21732pt>
 File: q3_1.png Graphic file (type png)
  <use q3_1.png>
-Package pdftex.def Info: q3_1.png used on input line 463.
+Package pdftex.def Info: q3_1.png used on input line 490.
 (pdftex.def)             Requested size: 408.68741pt x 271.3742pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 462--464
+Underfull \hbox (badness 10000) in paragraph at lines 489--491
 
  []
 
-<q3_2.png, id=80, 510.85857pt x 341.02406pt>
+<q3_2.png, id=81, 510.85857pt x 341.02406pt>
 File: q3_2.png Graphic file (type png)
  <use q3_2.png>
-Package pdftex.def Info: q3_2.png used on input line 467.
+Package pdftex.def Info: q3_2.png used on input line 494.
 (pdftex.def)             Requested size: 408.68741pt x 272.81961pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 467--468
+Underfull \hbox (badness 10000) in paragraph at lines 494--495
 
  []
 
-[20 <./q3_1.png>] <q3_3.png, id=85, 510.85857pt x 341.02406pt>
+[20 <./q3_1.png>] <q3_3.png, id=86, 510.85857pt x 341.02406pt>
 File: q3_3.png Graphic file (type png)
  <use q3_3.png>
-Package pdftex.def Info: q3_3.png used on input line 470.
+Package pdftex.def Info: q3_3.png used on input line 497.
 (pdftex.def)             Requested size: 408.68741pt x 272.81961pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--471
+Underfull \hbox (badness 10000) in paragraph at lines 496--498
 
  []
 
 [21 <./q3_2.png> <./q3_3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 472--473
+Underfull \hbox (badness 10000) in paragraph at lines 499--500
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 474--478
+Underfull \hbox (badness 10000) in paragraph at lines 501--505
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--480
+Underfull \hbox (badness 10000) in paragraph at lines 506--507
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
+Underfull \hbox (badness 10000) in paragraph at lines 528--529
 
  []
 
-[23] [24] <q4err.png, id=100, 380.42125pt x 282.05376pt>
+[23] [24] <q4err.png, id=101, 380.42125pt x 282.05376pt>
 File: q4err.png Graphic file (type png)
  <use q4err.png>
-Package pdftex.def Info: q4err.png used on input line 511.
+Package pdftex.def Info: q4err.png used on input line 538.
 (pdftex.def)             Requested size: 380.4203pt x 282.05305pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--512
+Underfull \hbox (badness 10000) in paragraph at lines 538--539
 
  []
 
 [25 <./q4err.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 517--518
+Underfull \hbox (badness 10000) in paragraph at lines 544--545
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 519--520
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 521--522
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--524
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
 
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 532--533
+Underfull \hbox (badness 10000) in paragraph at lines 559--560
 
  []
 
@@ -658,27 +663,28 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  4978 strings out of 493117
  69455 string characters out of 6135433
- 202358 words of memory out of 5000000
+ 202362 words of memory out of 5000000
  8375 multiletter control sequences out of 15000+600000
  7631 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,43p,1259b,1753s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,43p,1259b,1755s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
-.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx1
-0.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.
-pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.p
-fb>
-Output written on hw2.pdf (39 pages, 239182 bytes).
+cmmi7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.
+pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pf
+b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+>
+Output written on hw2.pdf (39 pages, 249524 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
+ 196 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
