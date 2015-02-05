@@ -56,7 +56,7 @@ will not accept it after the following Thursday.)
 {\Large
 \textbf{Your name:} \underline{Priyank Mathur} \\
 \textbf{Email:} \underline{priyankm@stanford.edu} \textbf{SUNet ID:} \underline{priyankm}\\*[2ex] }
-Collaborators: \hrulefill \\
+Collaborators: \underline{Emrah Budur, Shundan Xiao, Dibyajyoti Ghosh, Arkajyoti Misra} \\
 \vfill
 
 \vfill
@@ -374,22 +374,36 @@ From (1) and (2), we get
 
 That is, distance of a set of points from a query point is minimum if the query point is the centroid of the set of data.\\
 
-Let $C_{t1}, C_{t2} \hdots C_{tk}$ be the $k$ clusters in $t^{th}$ iteration with $c_{t1}, c_{t2} \hdots c_{tk}$ centroids. Similarly for iteration $(t+1)$, clusters are $C_{(t+1)1}, C_{(t+1)2} \hdots C_{(t+1)k}$ with centroids $c_{(t+1)1}, c_{(t+1)2} \hdots c_{(t+1)k}$.
+Let $C_{t1}, C_{t2} \hdots C_{tk}$ be the $k$ clusters in $t^{th}$ iteration with $c_{t1}, c_{t2} \hdots c_{tk}$ centroids. Similarly for iteration $(t+1)$, clusters are $C_{(t+1)1}, C_{(t+1)2} \hdots C_{(t+1)k}$ with centroids $c_{(t+1)1}, c_{(t+1)2} \hdots c_{(t+1)k}$. \\
+
+Let $Cost (C_1, C_2 \hdots C_k, c_1, c_2 \hdots c_k)$ represent the cost while using clusters $C_1, C_2 \hdots C_k$ and centroids as $c_1, c_2 \hdots c_k$.\\
 
 Now, $$\phi = \sum_{x \in X} min_{c \in C} ||x-c||^2$$
 
 We know 
 \begin{itemize}
 \item $||x-c||^2$ will be minimum when $x$ belongs to the cluster represented by centroid c.
-\item In each iteration, a point is placed in the cluster of its nearest centroid (which reduces the overall error).
-\item Also, the new centorid is calculated as the average of the cluster points, so it is closer to the data points within the cluster (also contributing by reducing error).
+\item In each iteration's step (2), a point is placed in the cluster of its nearest centroid. This reduces the error as per the definition of $\phi$ above, that is
+\begin{equation}\label{eq:simple}
+\begin{aligned}
+Cost (C_{(t+1)1}, C_{(t+1)2} \hdots C_{(t+1)k}, c_{t1}, c_{t2} \hdots c_{tk}) \leq Cost (C_{t1}, C_{t2} \hdots C_{tk}, c_{t1}, c_{t2} \hdots c_{tk})
+\end{aligned}
+\end{equation}
+
+\item In each iteration's step (3), the new centorid is calculated as the average of the cluster points, so it is closer to the data points within the cluster, also contributing by reducing error. We can see this by using equation (3) above, where z is the old centroid and c(S) is the new centroid.\\
+\begin{equation}\label{eq:simple}
+\begin{aligned}
+Cost (C_{(t+1)1}, C_{(t+1)2} \hdots C_{(t+1)k}, c_{(t+1)1}, c_{(t+1)2} \hdots c_{(t+1)k}) \leq \\
+Cost (C_{(t+1)1}, C_{(t+1)2} \hdots C_{(t+1)k}, c_{t1}, c_{t2} \hdots c_{tk})
+\end{aligned}
+\end{equation}
+
 \end{itemize}
 
 Therefore, iteration $(t+1)$ should have better or atleast as good cluster assignments as iteration $t$. \\
 
-Hence, from (3), we can deduce that $\phi^t \geq \phi^{t+1}$ since in $\phi^t$ we calculate distances using points which are not the optimal centroids of the data cluster.
-\\\\
-\textbf{Write Math}
+Hence, from (3), (4) and (5), we can deduce that $\phi^t \geq \phi^{t+1}$ since in $\phi^t$ we calculate distances using points which are not the optimal centroids of the data cluster.
+
 
 \pagebreak[4]
 \section*{Answer to Question 3.c}
@@ -408,11 +422,11 @@ At this iteration, $\phi$ converges to the finite value corresponding to the opt
 \textbf{Data distribution}
 Let the actual data be present in the below format. There are 3 true circular clusters with the points lying on the circumference of the circle. In this setting, each circle will ideally have its centroid at the center of the circle. Let each of the 3 clusters have n points. Also for the sake of analysis, we will assume the radius (r) of the 3 circles to be 1.
 
-We will also assume that the distance $G-1 \gg K+1$
+We will also assume that the distance $G \gg K$
 \\
 
 Thus, the optimal cost is equal to -
-$$\phi_{Opt} = 3 \times n r = 3n$$
+$$\phi_{Opt} = 3 \times n^2 r = 3n^2$$
 \includegraphics[scale=0.8]{q3_1} \\
 
 Now, lets assume a bad initialization as shown in diagram below. The farthest cluster gets 2 centroid allocations.
@@ -420,7 +434,40 @@ Now, lets assume a bad initialization as shown in diagram below. The farthest cl
 \includegraphics[scale=0.8]{q3_2} \\
 
 In this case, the k-means algorithm will converge with the following cluster assignments.\\
-\includegraphics[scale=0.8]{q3_3}
+\includegraphics[scale=0.8]{q3_3} \\
+
+From 3.a, we know that \\
+
+$
+\sum_{x \in S} || x - z ||^2 - \sum_{x \in S} || x - c(S)||^2 = |S| . || c(S) - z ||^2 \\ \\
+\implies \sum_{x \in S} || x - z ||^2 = |S| . || c(S) - z ||^2 + \sum_{x \in S} || x - c(S)||^2
+$ \\
+
+where z are the centroids in the bad initialization. \\
+
+Therefore, for cluster C1 and C2, the new cost will be
+$$\phi_{C1} + \phi_{C2} = n^2 + n (\dfrac{K}{2})^2 + n^2 + n (\dfrac{K}{2})^2$$
+$$\phi_{C1} + \phi_{C2} = 2n^2 + n \dfrac{K^2}{2} $$
+
+Cluster 3 is actually divided into 2 new clusters and hence its cost will reduce, therefore the new cost for C3 is -
+$$\phi_{C3} = n^2 - 2 \times \frac{n}{2} (\dfrac{4}{3\pi})^2$$
+Since the centroid of a semi circle is located at $(0, \dfrac{4r}{3\pi})$.
+$$\phi_{C3} = n^2 - n \dfrac{16}{9 \pi^2}$$
+
+Therefore, total new cost = 
+$$\phi_{new} = 2n^2 + n \dfrac{K^2}{2} + n^2 - n \dfrac{16}{9 \pi^2} $$
+$$\implies \phi_{new} = 3n^2 + n (\dfrac{K^2}{2} - \dfrac{16}{9 \pi^2})  $$
+$$\implies \phi_{new} = 3n^2 + n (\dfrac{K^2}{2} - 0.18)  $$
+
+Hence, the ratio of costs is
+$$ r = \dfrac{\phi_{new}}{\phi_{Opt}} = \dfrac{3n^2 + n (\dfrac{K^2}{2} - 0.18)}{3n^2}$$
+$$ r = 1 + \frac{1}{3n} (\dfrac{K^2}{2} - 0.18)$$
+
+We know that for true clusters C1 and C2 to be different, $K > 2 \times radius > 2$.
+
+Hence the ratio $r$ is always greater than 1.\\
+
+We can make $r$ arbitrarily greater than 1 by increasing distance $K$ and $G$, as long as $G \gg K$.
 
 \pagebreak[4]
 \section*{Answer to Question 4a}
@@ -457,6 +504,12 @@ Top 5 words for document 2 are - \\
 \item post-infectious
 \item teleological
 \end{itemize}
+
+\pagebreak[4]
+\section*{Code for Q1}
+
+\lstinputlisting[language=Python]{submission/snap/priyankm_hw2_q1.txt}
+
 
 \pagebreak[4]
 \section*{Code for Q2}

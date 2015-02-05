@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 FEB 2015 02:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 FEB 2015 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -192,6 +192,12 @@ LaTeX Warning: Label `eq:simple' multiply defined.
 
 LaTeX Warning: Label `eq:simple' multiply defined.
 
+
+LaTeX Warning: Label `eq:simple' multiply defined.
+
+
+LaTeX Warning: Label `eq:simple' multiply defined.
+
 )
 \openout1 = `hw2.aux'.
 
@@ -269,6 +275,11 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \c@lstlisting=\count118
+
+Overfull \hbox (28.16042pt too wide) in paragraph at lines 57--60
+\OT1/cmr/m/n/14.4 Col-lab-o-ra-tors: $[]$ 
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 57--60
 
@@ -454,105 +465,154 @@ Underfull \hbox (badness 10000) in paragraph at lines 375--376
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
 
  []
 
+
+Overfull \hbox (46.29416pt too wide) in paragraph at lines 379--380
+[]\OT1/cmr/m/n/14.4 Let $\OML/cmm/m/it/14.4 Cost\OT1/cmr/m/n/14.4 (\OML/cmm/m/i
+t/14.4 C[]; C[] [] C[]; c[]; c[] [] c[]\OT1/cmr/m/n/14.4 )$ rep-re-sent the cos
+t while us-ing clus-ters $\OML/cmm/m/it/14.4 C[]; C[] [] C[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
+
+ []
+
+
+Overfull \hbox (53.7375pt too wide) detected at line 391
+[] []
+ []
+
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 390--393
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 397--400
+Underfull \hbox (badness 10000) in paragraph at lines 411--414
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 411--413
+Underfull \hbox (badness 10000) in paragraph at lines 425--427
 
  []
 
 <q3_1.png, id=75, 510.85857pt x 339.21732pt>
 File: q3_1.png Graphic file (type png)
  <use q3_1.png>
-Package pdftex.def Info: q3_1.png used on input line 416.
+Package pdftex.def Info: q3_1.png used on input line 430.
 (pdftex.def)             Requested size: 408.68741pt x 271.3742pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--417
+Underfull \hbox (badness 10000) in paragraph at lines 429--431
 
  []
 
 <q3_2.png, id=76, 510.85857pt x 341.02406pt>
 File: q3_2.png Graphic file (type png)
  <use q3_2.png>
-Package pdftex.def Info: q3_2.png used on input line 420.
+Package pdftex.def Info: q3_2.png used on input line 434.
 (pdftex.def)             Requested size: 408.68741pt x 272.81961pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--421
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
  []
 
 [19 <./q3_1.png>] <q3_3.png, id=82, 510.85857pt x 341.02406pt>
 File: q3_3.png Graphic file (type png)
  <use q3_3.png>
-Package pdftex.def Info: q3_3.png used on input line 423.
+Package pdftex.def Info: q3_3.png used on input line 437.
 (pdftex.def)             Requested size: 408.68741pt x 272.81961pt.
 
-[20 <./q3_2.png> <./q3_3.png>] [21]
-<q4err.png, id=91, 380.42125pt x 282.05376pt>
-File: q4err.png Graphic file (type png)
- <use q4err.png>
-Package pdftex.def Info: q4err.png used on input line 431.
-(pdftex.def)             Requested size: 380.4203pt x 282.05305pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 431--432
+Underfull \hbox (badness 10000) in paragraph at lines 436--438
 
  []
 
-[22 <./q4err.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 437--438
-
- []
-
-
+[20 <./q3_2.png> <./q3_3.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 439--440
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--442
+Underfull \hbox (badness 10000) in paragraph at lines 441--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 443--444
+Underfull \hbox (badness 10000) in paragraph at lines 446--447
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
+
+ []
+
+[22] [23] <q4err.png, id=97, 380.42125pt x 282.05376pt>
+File: q4err.png Graphic file (type png)
+ <use q4err.png>
+Package pdftex.def Info: q4err.png used on input line 478.
+(pdftex.def)             Requested size: 380.4203pt x 282.05305pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 478--479
+
+ []
+
+[24 <./q4err.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 484--485
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--446
+Underfull \hbox (badness 10000) in paragraph at lines 486--487
 
  []
 
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 452--453
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
 
  []
 
-[24] (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
+
+Underfull \hbox (badness 10000) in paragraph at lines 490--491
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 492--493
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 499--500
+
+ []
+
+[26] (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
-(./submission/snap/priyankm_hw2_q2.txt) [25]
+(./submission/snap/priyankm_hw2_q1.txt [27] [28] [29]) [30]
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
-(./submission/snap/priyankm_hw2_q4.txt [26] [27] [28] [29] [30] [31]) [32]
+(./submission/snap/priyankm_hw2_q2.txt) [31]
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+)
+(./submission/snap/priyankm_hw2_q4.txt [32] [33] [34] [35] [36] [37]) [38]
 (./hw2.aux)
 
 LaTeX Warning: There were multiply-defined labels.
@@ -563,13 +623,13 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 40 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4830 strings out of 493117
- 67735 string characters out of 6135433
- 200598 words of memory out of 5000000
- 8232 multiletter control sequences out of 15000+600000
+ 4978 strings out of 493117
+ 69455 string characters out of 6135433
+ 202357 words of memory out of 5000000
+ 8375 multiletter control sequences out of 15000+600000
  7631 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,43p,1259b,1643s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,43p,1259b,1753s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
@@ -582,10 +642,10 @@ r12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
 .pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.
 pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.p
 fb>
-Output written on hw2.pdf (32 pages, 230344 bytes).
+Output written on hw2.pdf (38 pages, 237356 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
+ 189 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

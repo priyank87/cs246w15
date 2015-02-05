@@ -1,0 +1,184 @@
+
+# coding: utf-8
+
+# In[1]:
+
+import numpy as np
+from numpy import linalg as LA
+import matplotlib.pyplot as plt
+
+
+# In[2]:
+
+path = 'q1-dataset/user-shows.txt'
+path_alex = 'q1-dataset/alex.txt'
+path_show = 'q1-dataset/shows.txt'
+
+
+# In[3]:
+
+shows = open(path_show).read().split('\n')
+
+
+# In[4]:
+
+alex = np.loadtxt(path_alex, delimiter=' ')
+
+
+# In[5]:
+
+R = np.loadtxt(path, delimiter=' ')
+
+
+# In[6]:
+
+P = np.diag(R.sum(1))
+
+
+# In[7]:
+
+Q = np.diag(R.sum(0))
+
+
+# In[8]:
+
+T = R.dot(R.T)
+
+
+# In[9]:
+
+P_sqrt = np.power(P, 0.5)
+
+
+# In[10]:
+
+Q_sqrt = np.power(Q, 0.5)
+
+
+# In[11]:
+
+P_sq_inv = LA.inv(P_sqrt)
+
+
+# In[12]:
+
+Q_sq_inv = LA.inv(Q_sqrt)
+
+
+# In[12]:
+
+
+
+
+# In[ ]:
+
+SU = P_sq_inv.dot(T).dot(P_sq_inv)
+
+
+# In[36]:
+
+GU = SU.dot(R)
+
+
+# In[40]:
+
+GU_sub = GU[:, :100]
+
+
+# In[94]:
+
+unn_idx = np.argsort(GU_sub[499,:])[::-1][:5]
+
+
+# In[95]:
+
+unn_scr = GU_sub[499, unn_idx]
+
+
+# In[65]:
+
+
+
+
+# In[96]:
+
+for ix in unn_idx:
+    print shows[ix], GU_sub[499, ix]
+
+
+# In[85]:
+
+
+
+
+# In[88]:
+
+SI = Q_sq_inv.dot(R.T.dot(R)).dot(Q_sq_inv)
+
+
+# In[91]:
+
+GI = R.dot(SI)
+
+
+# In[93]:
+
+GI_sub = GI[:, :100]
+
+
+# In[97]:
+
+inn_idx = np.argsort(GI_sub[499,:])[::-1][:5]
+
+
+# In[98]:
+
+inn_scr = GI_sub[499, inn_idx]
+
+
+# In[100]:
+
+for ix in inn_idx:
+    print shows[ix], GI_sub[499, ix]
+
+
+# In[103]:
+
+
+
+
+# In[203]:
+
+ii_rec = np.argsort(GI_sub[499,:])[::-1]
+uu_rec = np.argsort(GU_sub[499,:])[::-1]
+ttl = alex[:100].sum()
+uu_rates = []
+ii_rates = []
+
+for k in range(1,21):
+    uu_idxs = uu_rec[:k]
+    ii_idxs = ii_rec[:k]
+    
+    uu_liked = alex[uu_idxs].sum()
+    ii_liked = alex[ii_idxs].sum()
+    
+    #print uu_liked, ii_liked
+    
+    uu_rates.append(uu_liked/ttl)
+    ii_rates.append(ii_liked/ttl)
+
+
+# In[204]:
+
+plt.plot(np.arange(20), uu_rates, label='user-user sim')
+plt.plot(np.arange(20), ii_rates, label='item-item sim')
+plt.xlabel("k")
+plt.ylabel("TP")
+plt.title("TP vs. k")
+plt.legend(loc=2)
+
+
+# In[ ]:
+
+
+
