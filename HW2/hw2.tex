@@ -75,7 +75,7 @@ I acknowledge and accept the Honor Code.\\*[3ex]
 Let the cosine similarity of vectors $u$ and $v$ be represented as 
 $$ cos(u, v) = \frac{ \sum_{i} u_i * v_i }{||u|| * ||v||} $$
 
-Let a row of a matrix be represented as where $R(i, :)$ and a column as where $R(:, j)$.\\
+Let a row of a matrix be represented as $R(i, :)$ and a column as $R(:, j)$.\\
 
 Now, consider the matrix calculated as $T = R^TR$, which will be an $n \times n$ matrix with each element as -
 $$T_{1,1} = R(:, 1) R(:, 1)$$
@@ -196,6 +196,8 @@ The other entries of $T$,  ($T_{ij}$), represent the overlap between a user and 
 \pagebreak[4]
 \section*{Answer to Question 1.d}
 
+Code at the end of the file.
+
 \subsection*{Top movies using user-user similarity}
 \begin{tabular}{ l c r }
 "FOX 28 News at 10pm" & 908.480053476\\
@@ -248,7 +250,7 @@ We know that -
 \begin{equation}
 C=Q \Sigma Q^T
 \end{equation}	
-where  $Q$ is an orthogonal matrix containing the eigenvectors of $C$ as its columns and $\sum$ contains the eigenvalues of B.\\
+where  $Q$ is an orthogonal matrix containing the eigenvectors of $C$ as its columns and $\Sigma$ contains the eigenvalues of $C$.\\
 \end{itemize} 
 $C = A^T A = (USV^T)^TUSV^T \\
 = V S^T U^T U S V^T  \\
@@ -332,8 +334,9 @@ A = U S V^T = U S V^-1\\
 \section*{Answer to Question 2b}
 \includegraphics[scale=0.8]{q2err}
 
-From the above curve we see that we achieve minimum r of -12.347 at k=261.
+From the above curve we see that we achieve minimum r of -12.347 at k=261.\\
 
+Code at the end of the file.
 \pagebreak[4]
 \section*{Answer to Question 2c}
 
@@ -361,8 +364,7 @@ $min_{X^TX = I_K} ||A-XW||_F^2$\\
 Replacing $W = X^T A$ from part 1, we get
 
 $$min_{X^TX = I_K} ||A-XX^T A||_F^2$$
-$$ \implies min_{X^TX = I_K} ||A (I_k-XX^T)||_F^2$$
-$$ \implies min_{X^TX = I_K} ||A (X^TX-XX^T)||_F^2$$
+$$ \implies min_{X^TX = I_K} ||A (I-XX^T)||_F^2$$
 
 \pagebreak[4]
 \section*{Answer to Question 3.a}

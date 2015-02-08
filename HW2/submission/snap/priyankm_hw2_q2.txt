@@ -1,4 +1,10 @@
+%% Author Priyank Mathur
+%% Classification using SVD
+
 %% predictor: get agreement for given X
+load HW2_Q2_X.txt;
+load HW2_Q2_y.txt
+
 function [outputs] = predictor(X, y)
 
 	modelX = X(41:640, :);
