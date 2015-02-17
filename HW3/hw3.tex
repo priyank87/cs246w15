@@ -185,7 +185,22 @@ Runtime for Monte Carlo with R = 5 - 34.7 $\mu s$.\\
 \pagebreak[4]
 \section*{Answer to Question 3.b}
 
-$$s_A (X, Y) = \dfrac{C1}{\sum_{i=1}^{|I(X)|} \sum_{j=1}^{|I(Y)|} W_{X, O_i(X)} W_{Y, O_j(Y)}} \sum_{i=1}^{|I(X)|} \sum_{j=1}^{|I(Y)|} W_{X, O_i(X)} W_{Y, O_j(Y)}$$
+\setcounter{equation}{2}
+
+\begin{small}
+\begin{equation}
+s_A (X, Y) = \dfrac{C1}{\sum_{i=1}^{|O(X)|} \sum_{j=1}^{|O(Y)|} W_{X, O_i(X)} \cdot W_{Y, O_j(Y)}} \times
+\sum_{i=1}^{|O(X)|} \sum_{j=1}^{|O(Y)|} W_{X, O_i(X)} \cdot W_{Y, O_j(Y)} \cdot s_B(O_i(X), O_j (Y ))
+\end{equation}
+\end{small}
+
+\begin{small}
+\begin{equation}
+s_B (x, y) = \dfrac{C2}{\sum_{i=1}^{|I(x)|} \sum_{j=1}^{|I(y)|} \cdot W_{I_i(x), x} W_{I_j(y), y}} \times
+\sum_{i=1}^{|I(x)|} \sum_{j=1}^{|I(y)|} W_{I_i(x), x} \cdot W_{I_j(y), y} \cdot s_A(I_i(x), I_j (y ))
+\end{equation}
+\end{small}
+
 
 \pagebreak[4]
 \section*{Answer to Question 3.c}
