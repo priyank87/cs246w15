@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  16 FEB 2015 16:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  16 FEB 2015 23:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -370,53 +370,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
-[12] [13] [14] [15] [16] [17] <q4c1.png, id=76, 322.20375pt x 323.2075pt>
+[12] [13] [14] [15] [16] [17] <q4c1.png, id=77, 322.20375pt x 323.2075pt>
 File: q4c1.png Graphic file (type png)
 
 <use q4c1.png>
-Package pdftex.def Info: q4c1.png used on input line 204.
+Package pdftex.def Info: q4c1.png used on input line 206.
 (pdftex.def)             Requested size: 257.76334pt x 258.56635pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
-[18 <./q4c1.png>] <q4c2density.png, id=81, 373.395pt x 256.96pt>
+[18 <./q4c1.png>] <q4c2density.png, id=82, 373.395pt x 256.96pt>
 File: q4c2density.png Graphic file (type png)
 
 <use q4c2density.png>
-Package pdftex.def Info: q4c2density.png used on input line 222.
+Package pdftex.def Info: q4c2density.png used on input line 224.
 (pdftex.def)             Requested size: 298.7164pt x 205.56827pt.
- <q4c2indsetcnt.png, id=82, 400.49625pt x 256.96pt>
+ <q4c2indsetcnt.png, id=83, 400.49625pt x 256.96pt>
 File: q4c2indsetcnt.png Graphic file (type png)
 
 <use q4c2indsetcnt.png>
-Package pdftex.def Info: q4c2indsetcnt.png used on input line 226.
+Package pdftex.def Info: q4c2indsetcnt.png used on input line 228.
 (pdftex.def)             Requested size: 320.39743pt x 205.56827pt.
- <q4c2scnt.png, id=83, 393.47pt x 256.96pt>
+ <q4c2scnt.png, id=84, 393.47pt x 256.96pt>
 File: q4c2scnt.png Graphic file (type png)
 
 <use q4c2scnt.png>
-Package pdftex.def Info: q4c2scnt.png used on input line 230.
+Package pdftex.def Info: q4c2scnt.png used on input line 232.
 (pdftex.def)             Requested size: 314.77641pt x 205.56827pt.
  [19 <./q4c2density.png> <./q4c2indsetcnt.png>] [20 <./q4c2scnt.png>] <q4c3dens
-itycnt.png, id=94, 377.41pt x 256.96pt>
+itycnt.png, id=95, 377.41pt x 256.96pt>
 File: q4c3densitycnt.png Graphic file (type png)
 
 <use q4c3densitycnt.png>
-Package pdftex.def Info: q4c3densitycnt.png used on input line 238.
+Package pdftex.def Info: q4c3densitycnt.png used on input line 240.
 (pdftex.def)             Requested size: 301.9284pt x 205.56827pt.
- <q4c3essacnt.png, id=95, 402.50375pt x 256.96pt>
+ <q4c3essacnt.png, id=96, 402.50375pt x 256.96pt>
 File: q4c3essacnt.png Graphic file (type png)
 
 <use q4c3essacnt.png>
-Package pdftex.def Info: q4c3essacnt.png used on input line 242.
+Package pdftex.def Info: q4c3essacnt.png used on input line 244.
 (pdftex.def)             Requested size: 322.00343pt x 205.56827pt.
- <q4c3scnt.png, id=96, 396.48125pt x 256.96pt>
+ <q4c3scnt.png, id=97, 396.48125pt x 256.96pt>
 File: q4c3scnt.png Graphic file (type png)
 
 <use q4c3scnt.png>
-Package pdftex.def Info: q4c3scnt.png used on input line 246.
+Package pdftex.def Info: q4c3scnt.png used on input line 248.
 (pdftex.def)             Requested size: 317.18542pt x 205.56827pt.
  [21 <./q4c3densitycnt.png> <./q4c3essacnt.png>] [22 <./q4c3scnt.png>] [23] [24
 ] [25] (./hw3.aux) )
@@ -434,18 +434,19 @@ Here is how much of TeX's memory you used:
  38i,7n,32p,257b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssb
-x10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
-2.pfb>
-Output written on hw3.pdf (25 pages, 265432 bytes).
+cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx
+10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
+.pfb>
+Output written on hw3.pdf (25 pages, 276541 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 150 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
