@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  17 FEB 2015 22:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  18 FEB 2015 00:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -185,33 +185,82 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 137.
 )
-(./hw3.aux)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2014/04/23 v1.8e multicolumn formatting (FMi)
+\c@tracingmulticols=\count112
+\mult@box=\box30
+\multicol@leftmargin=\dimen127
+\c@unbalance=\count113
+\c@collectmore=\count114
+\doublecol@number=\count115
+\multicoltolerance=\count116
+\multicolpretolerance=\count117
+\full@width=\dimen128
+\page@free=\dimen129
+\premulticols=\dimen130
+\postmulticols=\dimen131
+\multicolsep=\skip51
+\multicolbaselineskip=\skip52
+\partial@page=\box31
+\last@line=\box32
+\maxbalancingoverflow=\dimen132
+\mult@rightbox=\box33
+\mult@grightbox=\box34
+\mult@gfirstbox=\box35
+\mult@firstbox=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\c@columnbadness=\count118
+\c@finalcolumnbadness=\count119
+\last@try=\dimen133
+\multicolovershoot=\dimen134
+\multicolundershoot=\dimen135
+\mult@nat@firstbox=\box54
+\colbreak@box=\box55
+\mc@col@check@num=\count120
+) (./hw3.aux)
 \openout1 = `hw3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
- (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
-\scratchdimen=\dimen127
-\scratchbox=\box30
-\nofMPsegments=\count113
-\nofMParguments=\count114
+\scratchcounter=\count121
+\scratchdimen=\dimen136
+\scratchbox=\box56
+\nofMPsegments=\count122
+\nofMParguments=\count123
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count115
-\MPscratchDim=\dimen128
-\MPnumerator=\count116
-\makeMPintoPDFobject=\count117
+\MPscratchCnt=\count124
+\MPscratchDim=\dimen137
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
 \everyMPtoPDFconversion=\toks22
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -261,14 +310,14 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count118
+\c@lstlisting=\count127
 
-Overfull \hbox (28.16042pt too wide) in paragraph at lines 57--60
+Overfull \hbox (28.16042pt too wide) in paragraph at lines 58--61
 \OT1/cmr/m/n/14.4 Col-lab-o-ra-tors: $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--60
+Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
  []
 
@@ -278,37 +327,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--60
 [2] <q1errvsiter.png, id=17, 396.48125pt x 266.9975pt>
 File: q1errvsiter.png Graphic file (type png)
  <use q1errvsiter.png>
-Package pdftex.def Info: q1errvsiter.png used on input line 85.
+Package pdftex.def Info: q1errvsiter.png used on input line 86.
 (pdftex.def)             Requested size: 396.48027pt x 266.99683pt.
 
 [3 <./q1errvsiter.png>] <q1errtrverrtel0.png, id=23, 614.295pt x 593.21625pt>
 File: q1errtrverrtel0.png Graphic file (type png)
 
 <use q1errtrverrtel0.png>
-Package pdftex.def Info: q1errtrverrtel0.png used on input line 92.
+Package pdftex.def Info: q1errtrverrtel0.png used on input line 93.
 (pdftex.def)             Requested size: 491.43666pt x 474.57364pt.
 
-Overfull \hbox (21.68164pt too wide) in paragraph at lines 92--93
+Overfull \hbox (21.68164pt too wide) in paragraph at lines 93--94
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
 
  []
 
@@ -317,66 +366,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--96
 File: q1errtrverrtel02.png Graphic file (type png)
 
 <use q1errtrverrtel02.png>
-Package pdftex.def Info: q1errtrverrtel02.png used on input line 99.
+Package pdftex.def Info: q1errtrverrtel02.png used on input line 100.
 (pdftex.def)             Requested size: 491.43666pt x 474.57364pt.
 
-Overfull \hbox (21.68164pt too wide) in paragraph at lines 99--100
+Overfull \hbox (21.68164pt too wide) in paragraph at lines 100--101
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 105.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 106.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 106.
  [5 <./q1errtrverrtel02.png>] [6] <q1errtrverrtelbias0.png, id=37, 614.295pt x 
 593.21625pt>
 File: q1errtrverrtelbias0.png Graphic file (type png)
 
 <use q1errtrverrtelbias0.png>
-Package pdftex.def Info: q1errtrverrtelbias0.png used on input line 127.
+Package pdftex.def Info: q1errtrverrtelbias0.png used on input line 128.
 (pdftex.def)             Requested size: 430.00356pt x 415.24854pt.
  [7 <./q1errtrverrtelbias0.png>]
 <q1errtrverrtelbias02.png, id=43, 614.295pt x 593.21625pt>
 File: q1errtrverrtelbias02.png Graphic file (type png)
 
 <use q1errtrverrtelbias02.png>
-Package pdftex.def Info: q1errtrverrtelbias02.png used on input line 134.
+Package pdftex.def Info: q1errtrverrtelbias02.png used on input line 135.
 (pdftex.def)             Requested size: 491.43666pt x 474.57364pt.
 
-Overfull \hbox (21.68164pt too wide) in paragraph at lines 134--135
+Overfull \hbox (21.68164pt too wide) in paragraph at lines 135--136
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
 [8 <./q1errtrverrtelbias02.png>] [9] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
 <q2d.png, id=57, 390.45876pt x 266.9975pt>
 File: q2d.png Graphic file (type png)
  <use q2d.png>
-Package pdftex.def Info: q2d.png used on input line 185.
+Package pdftex.def Info: q2d.png used on input line 186.
 (pdftex.def)             Requested size: 312.36742pt x 213.59827pt.
  [12 <./q2d.png>]
-Overfull \hbox (60.594pt too wide) in paragraph at lines 191--193
+Overfull \hbox (60.594pt too wide) in paragraph at lines 192--194
 $\OML/cmm/m/it/14.4 s[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 cameras; phones\OT
 1/cmr/m/n/14.4 ) = [][\OML/cmm/m/it/14.4 s[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14
 .4 nokia:com; nokia:com\OT1/cmr/m/n/14.4 ) + \OML/cmm/m/it/14.4 s[]\OT1/cmr/m/n
@@ -384,7 +433,7 @@ $\OML/cmm/m/it/14.4 s[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 cameras; phones\OT
  []
 
 
-Overfull \hbox (58.08635pt too wide) in paragraph at lines 191--193
+Overfull \hbox (58.08635pt too wide) in paragraph at lines 192--194
 \OML/cmm/m/it/14.4 s[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 kodak:com; nokia:co
 m\OT1/cmr/m/n/14.4 ) + \OML/cmm/m/it/14.4 s[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/1
 4.4 kodak:com; apple:com\OT1/cmr/m/n/14.4 ) + \OML/cmm/m/it/14.4 s[]\OT1/cmr/m/
@@ -392,74 +441,121 @@ n/14.4 (\OML/cmm/m/it/14.4 cannon:com; nokia:com\OT1/cmr/m/n/14.4 ) +
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 248--272
+Underfull \hbox (badness 10000) in paragraph at lines 249--273
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--278
+Underfull \hbox (badness 10000) in paragraph at lines 274--279
 
  []
 
-[14] [15] [16] [17] [18] <q4c1.png, id=87, 322.20375pt x 323.2075pt>
+[14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--307
+
+ []
+
+
+Overfull \hbox (18.29968pt too wide) in paragraph at lines 308--309
+[]$\OML/cmm/m/it/14.4 s[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 A\OT1/cmr/m/n/14
+.4 1\OML/cmm/m/it/14.4 ; A\OT1/cmr/m/n/14.4 2)[] = [] \OMS/cmsy/m/n/14.4 ^^B \O
+T1/cmr/m/n/14.4 [\OML/cmm/m/it/14.4 s[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 B\
+OT1/cmr/m/n/14.4 1\OML/cmm/m/it/14.4 ; B\OT1/cmr/m/n/14.4 1) + \OML/cmm/m/it/14
+.4 s[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 B\OT1/cmr/m/n/14.4 1\OML/cmm/m/it/1
+4.4 ; B\OT1/cmr/m/n/14.4 2) + \OML/cmm/m/it/14.4 s[]\OT1/cmr/m/n/14.4 (\OML/cmm
+/m/it/14.4 B\OT1/cmr/m/n/14.4 2\OML/cmm/m/it/14.4 ; B\OT1/cmr/m/n/14.4 1) + \OM
+L/cmm/m/it/14.4 s[] \OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 B\OT1/cmr/m/n/14.4 2\
+OML/cmm/m/it/14.4 ; B\OT1/cmr/m/n/14.4 2)] =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
+ []
+
+
+Overfull \hbox (16.50612pt too wide) in paragraph at lines 331--344
+[]\OML/cmm/m/it/14.4 ; [] 
+ []
+
+
+Overfull \hbox (14.55888pt too wide) in paragraph at lines 331--344
+[]\OML/cmm/m/it/14.4 ; [] 
+ []
+
+[16]
+Overfull \hbox (16.50612pt too wide) in paragraph at lines 348--361
+[]\OML/cmm/m/it/14.4 ; [] 
+ []
+
+
+Overfull \hbox (14.55888pt too wide) in paragraph at lines 348--361
+[]\OML/cmm/m/it/14.4 ; [] 
+ []
+
+[17] [18] [19] <q4c1.png, id=91, 322.20375pt x 323.2075pt>
 File: q4c1.png Graphic file (type png)
-
-<use q4c1.png>
-Package pdftex.def Info: q4c1.png used on input line 315.
+ <use q4c1.png>
+Package pdftex.def Info: q4c1.png used on input line 376.
 (pdftex.def)             Requested size: 257.76334pt x 258.56635pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
  []
 
-[19 <./q4c1.png>] <q4c2density.png, id=93, 373.395pt x 256.96pt>
+[20 <./q4c1.png>] <q4c2density.png, id=96, 373.395pt x 256.96pt>
 File: q4c2density.png Graphic file (type png)
 
 <use q4c2density.png>
-Package pdftex.def Info: q4c2density.png used on input line 333.
+Package pdftex.def Info: q4c2density.png used on input line 394.
 (pdftex.def)             Requested size: 298.7164pt x 205.56827pt.
- <q4c2indsetcnt.png, id=94, 400.49625pt x 256.96pt>
+ <q4c2indsetcnt.png, id=97, 400.49625pt x 256.96pt>
 File: q4c2indsetcnt.png Graphic file (type png)
 
 <use q4c2indsetcnt.png>
-Package pdftex.def Info: q4c2indsetcnt.png used on input line 337.
+Package pdftex.def Info: q4c2indsetcnt.png used on input line 398.
 (pdftex.def)             Requested size: 320.39743pt x 205.56827pt.
- <q4c2scnt.png, id=95, 393.47pt x 256.96pt>
+ <q4c2scnt.png, id=98, 393.47pt x 256.96pt>
 File: q4c2scnt.png Graphic file (type png)
 
 <use q4c2scnt.png>
-Package pdftex.def Info: q4c2scnt.png used on input line 341.
+Package pdftex.def Info: q4c2scnt.png used on input line 402.
 (pdftex.def)             Requested size: 314.77641pt x 205.56827pt.
- [20 <./q4c2density.png> <./q4c2indsetcnt.png>] [21 <./q4c2scnt.png>] <q4c3dens
-itycnt.png, id=105, 377.41pt x 256.96pt>
+ [21 <./q4c2density.png> <./q4c2indsetcnt.png>] [22 <./q4c2scnt.png>] <q4c3dens
+itycnt.png, id=108, 377.41pt x 256.96pt>
 File: q4c3densitycnt.png Graphic file (type png)
 
 <use q4c3densitycnt.png>
-Package pdftex.def Info: q4c3densitycnt.png used on input line 349.
+Package pdftex.def Info: q4c3densitycnt.png used on input line 410.
 (pdftex.def)             Requested size: 301.9284pt x 205.56827pt.
- <q4c3essacnt.png, id=106, 402.50375pt x 256.96pt>
+ <q4c3essacnt.png, id=109, 402.50375pt x 256.96pt>
 File: q4c3essacnt.png Graphic file (type png)
 
 <use q4c3essacnt.png>
-Package pdftex.def Info: q4c3essacnt.png used on input line 353.
+Package pdftex.def Info: q4c3essacnt.png used on input line 414.
 (pdftex.def)             Requested size: 322.00343pt x 205.56827pt.
- <q4c3scnt.png, id=107, 396.48125pt x 256.96pt>
+ <q4c3scnt.png, id=110, 396.48125pt x 256.96pt>
 File: q4c3scnt.png Graphic file (type png)
 
 <use q4c3scnt.png>
-Package pdftex.def Info: q4c3scnt.png used on input line 357.
+Package pdftex.def Info: q4c3scnt.png used on input line 418.
 (pdftex.def)             Requested size: 317.18542pt x 205.56827pt.
- [22 <./q4c3densitycnt.png> <./q4c3essacnt.png>] [23 <./q4c3scnt.png>] [24] [25
-] [26] (./hw3.aux) )
+ [23 <./q4c3densitycnt.png> <./q4c3essacnt.png>] [24 <./q4c3scnt.png>] [25] [26
+] [27] (./hw3.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 40 ({)
+### simple group (level 1) entered at line 41 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4034 strings out of 493117
- 58780 string characters out of 6135433
- 129640 words of memory out of 5000000
- 7441 multiletter control sequences out of 15000+600000
+ 4141 strings out of 493117
+ 60379 string characters out of 6135433
+ 133883 words of memory out of 5000000
+ 7545 multiletter control sequences out of 15000+600000
  8617 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,7n,32p,257b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -478,10 +574,10 @@ usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
 /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
 r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on hw3.pdf (26 pages, 344236 bytes).
+Output written on hw3.pdf (27 pages, 349205 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
+ 179 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

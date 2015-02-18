@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{color}
+\usepackage{multicol}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -298,6 +299,66 @@ s_B (x, y) = \dfrac{C2}{\sum_{i=1}^{|I(x)|} \sum_{j=1}^{|I(y)|} \cdot W_{I_i(x),
 
 \pagebreak[4]
 \section*{Answer to Question 3.c}
+
+Let the graph $K_{2,1}$ have nodes ${A1, A2}$ in $A$ and ${B1}$ in $B$. Similarly, let the graph $K_{2,2}$ have nodes ${A1, A2}$ in $A$ and ${B1, B2}$ in $B$.\\\
+
+Therefore, for iteration 1 - \\
+$s_A (A1,A2)_{K_{2,1}} = \dfrac{C1}{1 \times 1} \times s_B (B1,B1) = 0.8$\\
+
+$s_A (A1,A2)_{K_{2,2}} = \dfrac{C1}{2 \times 2} \times [s_B (B1,B1) + s_B (B1,B2) + s_B (B2,B1) +s_B \ (B2,B2)] = \dfrac{0.8}{2\times2} \times 2 = 0.4$\\
+
+\textbf{Results -} 
+
+\textbf{Iteration 1}
+\begin{multicols}{2}
+$K_{2,1}$\\
+$\mathbf{s_A('A1', 'A2'): 0.8},\\
+s_A('A1', 'A1'): 1,\\
+s_A('A2', 'A2'): 1\\
+s_B('B1', 'B1'): 1$\\
+\columnbreak \\
+$K_{2,2}$\\
+$\mathbf{s_A('A1', 'A2'): 0.4},\\
+s_A('A1', 'A1'): 1,\\
+s_A('A2', 'A2'): 1\\
+\mathbf{s_B('B1', 'B2'): 0.4},\\
+s_B('B1', 'B1'): 1,\\
+s_B('B2', 'B2'): 1$
+\end{multicols}
+
+\textbf{Iteration 2}
+\begin{multicols}{2}
+$K_{2,1}$\\
+$\mathbf{s_A('A1', 'A2'): 0.8},\\
+s_A('A1', 'A1'): 1,\\
+s_A('A2', 'A2'): 1\\
+s_B('B1', 'B1'): 1$\\
+\columnbreak \\
+$K_{2,2}$\\
+$\mathbf{s_A('A1', 'A2'): 0.5599999999999999},\\
+s_A('A1', 'A1'): 1,\\
+s_A('A2', 'A2'): 1\\
+\mathbf{s_B('B1', 'B2'): 0.5599999999999999},\\
+s_B('B1', 'B1'): 1,\\
+s_B('B2', 'B2'): 1$
+\end{multicols}
+
+\textbf{Iteration 3}
+\begin{multicols}{2}
+$K_{2,1}$\\
+$\mathbf{s_A('A1', 'A2'): 0.8},\\
+s_A('A1', 'A1'): 1,\\
+s_A('A2', 'A2'): 1\\
+s_B('B1', 'B1'): 1$\\
+\columnbreak \\
+$K_{2,2}$\\
+$\mathbf{s_A('A1', 'A2'): 0.6240000000000001},\\
+s_A('A1', 'A1'): 1,\\
+s_A('A2', 'A2'): 1\\
+\mathbf{s_B('B1', 'B2'): 0.6240000000000001},\\
+s_B('B1', 'B1'): 1,\\
+s_B('B2', 'B2'): 1$
+\end{multicols}
 
 
 \pagebreak[4]
