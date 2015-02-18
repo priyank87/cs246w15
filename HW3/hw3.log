@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  16 FEB 2015 23:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  17 FEB 2015 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -370,85 +370,118 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
-[12] [13] [14] [15] [16] [17] <q4c1.png, id=80, 322.20375pt x 323.2075pt>
-File: q4c1.png Graphic file (type png)
+<q2d.png, id=57, 390.45876pt x 266.9975pt>
+File: q2d.png Graphic file (type png)
+ <use q2d.png>
+Package pdftex.def Info: q2d.png used on input line 185.
+(pdftex.def)             Requested size: 312.36742pt x 213.59827pt.
+ [12 <./q2d.png>]
+Overfull \hbox (60.594pt too wide) in paragraph at lines 191--193
+$\OML/cmm/m/it/14.4 s[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 cameras; phones\OT
+1/cmr/m/n/14.4 ) = [][\OML/cmm/m/it/14.4 s[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14
+.4 nokia:com; nokia:com\OT1/cmr/m/n/14.4 ) + \OML/cmm/m/it/14.4 s[]\OT1/cmr/m/n
+/14.4 (\OML/cmm/m/it/14.4 nokia:com; apple:com\OT1/cmr/m/n/14.4 )  +
+ []
 
-<use q4c1.png>
-Package pdftex.def Info: q4c1.png used on input line 221.
-(pdftex.def)             Requested size: 257.76334pt x 258.56635pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Overfull \hbox (58.08635pt too wide) in paragraph at lines 191--193
+\OML/cmm/m/it/14.4 s[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 kodak:com; nokia:co
+m\OT1/cmr/m/n/14.4 ) + \OML/cmm/m/it/14.4 s[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/1
+4.4 kodak:com; apple:com\OT1/cmr/m/n/14.4 ) + \OML/cmm/m/it/14.4 s[]\OT1/cmr/m/
+n/14.4 (\OML/cmm/m/it/14.4 cannon:com; nokia:com\OT1/cmr/m/n/14.4 ) +
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 248--272
 
  []
 
-[18 <./q4c1.png>] <q4c2density.png, id=85, 373.395pt x 256.96pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--278
+
+ []
+
+[14] [15] [16] [17] [18] <q4c1.png, id=87, 322.20375pt x 323.2075pt>
+File: q4c1.png Graphic file (type png)
+
+<use q4c1.png>
+Package pdftex.def Info: q4c1.png used on input line 315.
+(pdftex.def)             Requested size: 257.76334pt x 258.56635pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
+
+ []
+
+[19 <./q4c1.png>] <q4c2density.png, id=93, 373.395pt x 256.96pt>
 File: q4c2density.png Graphic file (type png)
 
 <use q4c2density.png>
-Package pdftex.def Info: q4c2density.png used on input line 239.
+Package pdftex.def Info: q4c2density.png used on input line 333.
 (pdftex.def)             Requested size: 298.7164pt x 205.56827pt.
- <q4c2indsetcnt.png, id=86, 400.49625pt x 256.96pt>
+ <q4c2indsetcnt.png, id=94, 400.49625pt x 256.96pt>
 File: q4c2indsetcnt.png Graphic file (type png)
 
 <use q4c2indsetcnt.png>
-Package pdftex.def Info: q4c2indsetcnt.png used on input line 243.
+Package pdftex.def Info: q4c2indsetcnt.png used on input line 337.
 (pdftex.def)             Requested size: 320.39743pt x 205.56827pt.
- <q4c2scnt.png, id=87, 393.47pt x 256.96pt>
+ <q4c2scnt.png, id=95, 393.47pt x 256.96pt>
 File: q4c2scnt.png Graphic file (type png)
 
 <use q4c2scnt.png>
-Package pdftex.def Info: q4c2scnt.png used on input line 247.
+Package pdftex.def Info: q4c2scnt.png used on input line 341.
 (pdftex.def)             Requested size: 314.77641pt x 205.56827pt.
- [19 <./q4c2density.png> <./q4c2indsetcnt.png>] [20 <./q4c2scnt.png>] <q4c3dens
-itycnt.png, id=98, 377.41pt x 256.96pt>
+ [20 <./q4c2density.png> <./q4c2indsetcnt.png>] [21 <./q4c2scnt.png>] <q4c3dens
+itycnt.png, id=105, 377.41pt x 256.96pt>
 File: q4c3densitycnt.png Graphic file (type png)
 
 <use q4c3densitycnt.png>
-Package pdftex.def Info: q4c3densitycnt.png used on input line 255.
+Package pdftex.def Info: q4c3densitycnt.png used on input line 349.
 (pdftex.def)             Requested size: 301.9284pt x 205.56827pt.
- <q4c3essacnt.png, id=99, 402.50375pt x 256.96pt>
+ <q4c3essacnt.png, id=106, 402.50375pt x 256.96pt>
 File: q4c3essacnt.png Graphic file (type png)
 
 <use q4c3essacnt.png>
-Package pdftex.def Info: q4c3essacnt.png used on input line 259.
+Package pdftex.def Info: q4c3essacnt.png used on input line 353.
 (pdftex.def)             Requested size: 322.00343pt x 205.56827pt.
- <q4c3scnt.png, id=100, 396.48125pt x 256.96pt>
+ <q4c3scnt.png, id=107, 396.48125pt x 256.96pt>
 File: q4c3scnt.png Graphic file (type png)
 
 <use q4c3scnt.png>
-Package pdftex.def Info: q4c3scnt.png used on input line 263.
+Package pdftex.def Info: q4c3scnt.png used on input line 357.
 (pdftex.def)             Requested size: 317.18542pt x 205.56827pt.
- [21 <./q4c3densitycnt.png> <./q4c3essacnt.png>] [22 <./q4c3scnt.png>] [23] [24
-] [25] (./hw3.aux) )
+ [22 <./q4c3densitycnt.png> <./q4c3essacnt.png>] [23 <./q4c3scnt.png>] [24] [25
+] [26] (./hw3.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 40 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4023 strings out of 493117
- 58667 string characters out of 6135433
- 124640 words of memory out of 5000000
- 7434 multiletter control sequences out of 15000+600000
- 7690 words of font info for 28 fonts, out of 8000000 for 9000
+ 4034 strings out of 493117
+ 58780 string characters out of 6135433
+ 129640 words of memory out of 5000000
+ 7441 multiletter control sequences out of 15000+600000
+ 8617 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,32p,257b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,7n,32p,257b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi5.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
-pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pf
-b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on hw3.pdf (25 pages, 301479 bytes).
+/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i5.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7
+.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on hw3.pdf (26 pages, 344236 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
+ 176 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

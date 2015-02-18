@@ -158,29 +158,123 @@ Based on these graphs, we find the following to be true -
 \section*{Answer to Question 2d}
 Runtime for 40 iterations of power iteration - 791 $\mu s$.\\
 
-Runtime for Monte Carlo with R = 1 - 11 $ms$.\
+Avg runtime for Monte Carlo with R = 1 - 7.83 $ms$.\
 
-Runtime for Monte Carlo with R = 3 - 24 $ms$.\
+Avg runtime for Monte Carlo with R = 3 - 20.6 $ms$.\
 
-Runtime for Monte Carlo with R = 5 - 34.7 $ms$.\\
+Avg runtime for Monte Carlo with R = 5 - 35.57 $ms$.\\
 
 \begin{tabular}{l | c | r}
 \hline R & K & Error \\
-\hline 1 & 10 & 0.0040539431549\\
-\hline 3 & 10 & 0.0024193828540\\
-\hline 5 & 10 & 0.0019164964406\\
-\hline 1 & 30 & 0.0024580176469\\
-\hline 3 & 30 & 0.0016139479244\\
-\hline 5 & 30 & 0.0011990209574\\
-\hline 1 & 50 & 0.0018569538811\\
-\hline 3 & 50 & 0.0012340305464\\
-\hline 5 & 50 & 0.0009915055978\\
+\hline 1 & 10 & 0.0060365444268\\
+\hline 1 & 30 & 0.0047717255253\\
+\hline 1 & 50 & 0.0038620385493\\
+\hline 1 & 100 & 0.0029277461094\\
+\hline 3 & 10 & 0.0034659740412\\
+\hline 3 & 30 & 0.0026577309646\\
+\hline 3 & 50 & 0.0022720065398\\
+\hline 3 & 100 & 0.0017132042790\\
+\hline 5 & 10 & 0.0026678865383\\
+\hline 5 & 30 & 0.0021502352960\\
+\hline 5 & 50 & 0.0017972828358\\
+\hline 5 & 100 & 0.0013425298758\\
 \hline
 \end{tabular}
+\vspace{10mm}
+
+\includegraphics[scale=0.8]{q2d}\
 
 
 \pagebreak[4]
 \section*{Answer to Question 3.a}
+
+$s_A(cameras, phones) = \dfrac{C1}{3 \times 2} [s_B(nokia.com,nokia.com) +  s_B(nokia.com,apple.com) \
+ + s_B(kodak.com,nokia.com) + s_B(kodak.com,apple.com) + s_B(cannon.com,nokia.com) +\ s_B(cannon.com,apple.com)]$
+ 
+$s_A(cameras, phones) =  \dfrac{0.8}{6} [1+0+0+0+0+0] = 0.13333$\
+
+\vspace{0.5cm}
+\begin{small}
+\textbf{Iteration 1 -} \\
+$s_A('cameras', 'cameras'): 1,\\
+\mathbf {s_A('cameras', 'phones'): 0.13333333333333333},\\
+s_A('printers', 'printers'): 1,\\
+s_A('phones', 'phones'): 1,\\
+\mathbf {s_A('cameras', 'printers'): 0.0},\\
+s_A('phones', 'printers'): 0.0\\
+\\
+s_B('cannon.com', 'nokia.com'): 0.4, \\
+s_B('hp.com', 'nokia.com'): 0.0, \\
+s_B('kodak.com', 'kodak.com'): 1, \\
+s_B('apple.com', 'kodak.com'): 0.0, \\
+s_B('cannon.com', 'kodak.com'): 0.8, \\
+s_B('cannon.com', 'cannon.com'): 1, \\
+s_B('hp.com', 'kodak.com'): 0.0, \\
+s_B('apple.com', 'hp.com'): 0.0, \\
+s_B('kodak.com', 'nokia.com'): 0.4, \\
+s_B('apple.com', 'apple.com'): 1, \\
+s_B('apple.com', 'nokia.com'): 0.4, \\
+s_B('nokia.com', 'nokia.com'): 1, \\
+s_B('cannon.com', 'hp.com'): 0.0, \\
+s_B('hp.com', 'hp.com'): 1, \\
+s_B('apple.com', 'cannon.com'): 0.0$
+
+\vspace{0.5cm}
+\textbf{Iteration 2 -} \\
+$s_A('cameras', 'cameras'): 1, \\
+\mathbf {s_A('cameras', 'phones'): 0.2933333333333333}, \\
+s_A('printers', 'printers'): 1, \\
+s_A('phones', 'phones'): 1, \\
+\mathbf {s_A('cameras', 'printers'): 0.0}, \\
+s_A('phones', 'printers'): 0.0\\
+\\
+s_B('cannon.com', 'nokia.com'): 0.45333333333333337, \\
+s_B('hp.com', 'nokia.com'): 0.0, \\
+s_B('kodak.com', 'kodak.com'): 1, \\
+s_B('apple.com', 'kodak.com'): 0.10666666666666667, \\
+s_B('cannon.com', 'kodak.com'): 0.8, \\
+s_B('cannon.com', 'cannon.com'): 1, \\
+s_B('hp.com', 'kodak.com'): 0.0, \\
+s_B('apple.com', 'hp.com'): 0.0, \\
+s_B('kodak.com', 'nokia.com'): 0.45333333333333337, \\
+s_B('apple.com', 'apple.com'): 1, \\
+s_B('apple.com', 'nokia.com'): 0.45333333333333337, \\
+s_B('nokia.com', 'nokia.com'): 1, \\
+s_B('cannon.com', 'hp.com'): 0.0, \\
+s_B('hp.com', 'hp.com'): 1, \\
+s_B('apple.com', 'cannon.com'): 0.10666666666666667$
+
+\vspace{0.5cm}
+\textbf{Iteration 3 -} \\
+$s_A('cameras', 'cameras'): 1, \\
+\mathbf {s_A('cameras', 'phones'): 0.34311111111111114}, \\
+s_A('printers', 'printers'): 1, \\
+s_A('phones', 'phones'): 1, \\
+\mathbf {s_A('cameras', 'printers'): 0.0}, \\
+s_A('phones', 'printers'): 0.0\\
+\\
+s_B('cannon.com', 'nokia.com'): 0.5173333333333333, \\
+s_B('hp.com', 'nokia.com'): 0.0, \\
+s_B('kodak.com', 'kodak.com'): 1, \\
+s_B('apple.com', 'kodak.com'): 0.23466666666666663, \\
+s_B('cannon.com', 'kodak.com'): 0.8, \\
+s_B('cannon.com', 'cannon.com'): 1, \\
+s_B('hp.com', 'kodak.com'): 0.0, \\
+s_B('apple.com', 'hp.com'): 0.0, \\
+s_B('kodak.com', 'nokia.com'): 0.5173333333333333, \\
+s_B('apple.com', 'apple.com'): 1, \\
+s_B('apple.com', 'nokia.com'): 0.5173333333333333, \\
+s_B('nokia.com', 'nokia.com'): 1, \\
+s_B('cannon.com', 'hp.com'): 0.0, \\
+s_B('hp.com', 'hp.com'): 1, \\
+s_B('apple.com', 'cannon.com'): 0.23466666666666663$
+\end{small}\\
+
+Final result after 3 iterations - \\
+$
+\mathbf {s_A('cameras', 'phones'): 0.34311111111111114}, \\
+\mathbf {s_A('cameras', 'printers'): 0.0} \\
+$
 
 \pagebreak[4]
 \section*{Answer to Question 3.b}
@@ -227,7 +321,7 @@ s_B (x, y) = \dfrac{C2}{\sum_{i=1}^{|I(x)|} \sum_{j=1}^{|I(y)|} \cdot W_{I_i(x),
 \hline 0.1 & 7 & 137.67\\
 \hline 0.5 & 5 & 32.36\\
 \hline 1 & 4 & 18.93\\
-\hline 2 & 4 & 11.94\\
+\hline 2 & 3 & 11.94\\
 \hline
 \end{tabular}
 
