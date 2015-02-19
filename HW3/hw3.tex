@@ -7,6 +7,7 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{multicol}
+\usepackage{hyperref}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -146,14 +147,99 @@ Based on these graphs, we find the following to be true -
 
 \pagebreak[4]
 \section*{Answer to Question 2a}
+To prove - 
+$$||r - r^k||_1 \leq 2 \beta^k$$\
 
+$
+r - r^k = \dfrac{1-\beta}{n}\mathbf{1} + \beta M r - \dfrac{1-\beta}{n}\mathbf{1} - \beta M r^{k-1} 
+= \beta M r - \beta M r^{k-1}  = \beta (M \mathbf{k}) \\
+$
 
+where $k = (r - r^{k-1})$\\
+
+$||r - r^k||_1 = \beta || M \mathbf{k}||_1$ \\
+
+Expanding rhp, we get - \
+
+$
+\beta || M \mathbf{k}||_1 \\
+ = \beta (M_{11}K_1 + M_{12}K_2 + \cdots + M_{1N}K_N + \\
+ M_{21}K_1 + M_{22}K_2 + \cdots + M_{2N}K_N ||_1 \\
+ \vdots \\
+  M_{N1}K_1 + M_{N2}K_2 + \cdots + M_{NN}K_N)
+$\\
+
+$
+= \beta (K_1(M_{11} + M_{21} + \cdots + M_{N1})  \\ 
++ K_2(M_{11} + M_{21} + \cdots + M_{N1})  \\
+\vdots \\
++ K_N(M_{1} + M_{21} + \cdots + M_{N1}))
+$ \\
+
+$ = \beta || K ||_1 = \beta ||r-r^{k-1}||$ \\
+
+Using the approach multiple times, we get - 
+
+$
+||r - r^k||_1 = \beta ||r-r^{k-1}||_1 = \beta^2 ||r-r^{k-2}||_1 = \beta^3 ||r-r^{k-3}||_1 \cdots = \beta^k ||r-r^{0}||_1
+$ \\
+
+Since $r$ is a probability distribution, we know that  - \\
+$$||r-r^{0}||_1 \leq 2$$
+
+Hence, $$||r - r^k||_1 \leq 2 \beta^k$$\
 
 \pagebreak[4]
 \section*{Answer to Question 2b}
 
+From part a we know that the upper limit of $L_1$ error is given by $$||r - r^k||_1 \leq 2 \beta^k$$
+
+To limit this to $\delta$, we have $2 \beta^k \leq \delta$.\\
+
+Taking log on both sides - \
+$
+\log 2 + k \log \beta \leq \log \delta\\
+\implies k \leq \dfrac{\log \delta - \log 2}{\log \beta}\\
+\implies k \leq \dfrac{\log \dfrac{\delta}{2}}{\log \beta}
+\implies k \leq \dfrac{\log \dfrac{2	}{\delta}}{\log \dfrac{1}{\beta}}
+$\
+
+where $k$ is the number of iterations. Thus we need to run at least $\dfrac{\log \dfrac{2	}{\delta}}{\log \dfrac{1}{\beta}}$ times to ensure error $\leq \delta$.\\
+
+In each iteration, we calculate the page rank of a node i as 
+$$ r_i = \sum_{j \in N(i)} \dfrac{r_j}{deg_j} + C$$
+where C is the constant amount of work needed to add the pagerank due to teleports. Therefore in each iteration, we cover all the $m$ edges of the graph and do a constant amount of work for each edge.\\
+
+Therefore, $$runtime(iteration) = O(m)$$
+Hence, total cost is 
+$$
+runtime = O \left(\dfrac{m \times \dfrac{2}{\delta} }{\log \dfrac{1}{\beta}} \right) = O \left(\dfrac{m}{\log \dfrac{1}{\beta}} \right)
+$$
+
+Since $\delta$ is constant.
+
 \pagebreak[4]
 \section*{Answer to Question 2c}
+
+Let's consider that each iteration (each random walk) is a series of success/fail events. We define fail event if we transition to another node and success event when the random walk ends.
+
+$$P(fail) = \beta$$
+$$P(success) = 1 - \beta$$
+
+This is a geometric series, where the first occurrence of success requires k independent events. Thus, the probability that we get success at trial $k$ is $$P(X=k) = \beta^{k-1} (1-\beta) $$
+
+The expected value of this geometric series is\textsuperscript{[1]} $$E(X) = \dfrac{1}{P(success)} = \dfrac{1}{1-\beta}$$
+
+Therefore, in each random walk, we perform approximately $\dfrac{1}{1-\beta}$ steps. In the total of $nR$ iterations, we perform $\dfrac{nR}{1-\beta}$ steps.\\
+
+Since each step takes unit time, 
+$$runtime = O\left(\dfrac{nR}{1-\beta}\right)$$
+
+\vspace{5cm}
+\begin{small}
+\textsuperscript{[1]} \url{ http://en.wikipedia.org/wiki/Geometric_distribution}
+\end{small}
+
 
 \pagebreak[4]
 \section*{Answer to Question 2d}
